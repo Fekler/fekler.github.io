@@ -9,9 +9,29 @@ body{
 }
 main{
     background-color: white;
-    width: auto;
+    width: 400px;
     margin: auto;
     padding: 10px;
     box-shadow: 3px 3px 5x black;
 
+}
+h1{
+    font-size: 2em;
+    color: rgb(58, 0, 112);
+}
+h1{
+    font-size: 1.5em;
+    color: rgb(58, 0, 112);
+}
+img.lado{
+    float: right;
+}
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(58, 0, 112);
+}
+a:hover{
+    text-decoration: underline;
+    color:rgb(26, 26, 255)
 }
