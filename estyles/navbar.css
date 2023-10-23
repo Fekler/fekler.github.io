@@ -105,7 +105,11 @@
         display: block;
     }
     .navbar .name {
-        font-size: 18px;
+        font-size: 14px;
+    }
+    .navbar select {
+        font-size: 10px; /* Tamanho de fonte menor */
+        padding: 10px; /* Menos espaço entre os campos */
     }
 }
 
