@@ -108,8 +108,8 @@
         font-size: 14px;
     }
     .navbar select {
-        font-size: 10px; /* Tamanho de fonte menor */
-        padding: 10px; /* Menos espaço entre os campos */
+        font-size: 8px; /* Tamanho de fonte menor */
+        padding: 8px; /* Menos espaço entre os campos */
     }
 }
 
