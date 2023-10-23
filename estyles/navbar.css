@@ -17,11 +17,14 @@
 /* Estilizando os links da navbar */
 .navbar a {
     float: left;
-    font-size: 16px;
+    font-size: 18px;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    line-height: 50px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 /* Mudar a cor dos links quando o mouse passar por cima deles */
@@ -41,6 +44,7 @@
     margin-right: 10px;
     margin-left: 20px;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 /* Estilos para o menu móvel */
@@ -52,7 +56,7 @@
 .navbar select {
     float: right;
     /* Mover o seletor de idioma para a direita */
-    padding: 17px;
+    padding: 31px;
     background-color: #333;
     /* Cor de fundo do seletor */
     color: white;
@@ -62,10 +66,12 @@
 /* Estilos para o nome ao lado da imagem */
 .navbar .name {
     float: left;
-    font-size: 18px;
+    font-size: 22px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
     padding: 14px 0;
     text-decoration: none;
+    font-weight: bolder;
 }
 
 .right-fields {

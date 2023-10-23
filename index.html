@@ -1,29 +1,49 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
+
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="estyles/navbar.css">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Titulo do Site</title>
-    <link rel="stylesheet" href="estyles/style.css">
+    <title>Fekler</title>
 </head>
+
 <body>
-   <main>
-    <head>
-        <header></header>
-        <h1>Curso em video</h1>
-        <img src="Resources/Images/Fekler.jpeg" alt="perfil">
-        <article>
-            <h2>Cusrso HTML5 Css3</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias suscipit amet repudiandae quidem eius incidunt nobis magnam quasi beatae fugit itaque, cum quisquam expedita! Commodi inventore fugit perspiciatis voluptatem recusandae!</p>
-        </article>
-        <article>
-            <h2>Curso JavaScript</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit voluptatem dignissimos pariatur? Nesciunt nostrum maiores possimus consequatur ullam dignissimos ipsa aspernatur, deserunt, soluta voluptatum cumque ab, cum similique eius cupiditate!</p>
-        </article>
-    </head>
-   </main> 
+    <header>
+        <div class="navbar">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+            <img href="#home" src="Resources/Images/fekler.jpeg" alt="Logo">
+            <a class="name" href="#home">Felipe Queiroz</a>
+            <div class="right-fields">
+                <select id="language-selector" onchange="changeLanguage(this.value)">
+                    <option value="pt">Português</option>
+                    <option value="en">English</option>
+                </select>
+                <a id="about-link" href="#about"></a>
+                <a id="portfolio-link" href="#portfolio"></a>
+                <a id="contact-link" href="#contact"></a>
+            </div>
+        </div>
+    </header>
+
+    <main id="content">
+        <h1 id="greeting"></h1>
+    </main>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementsByClassName("navbar")[0];
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+    </script>
+
 </body>
 <footer>
-    
+    <script src="Scripts/LocalizationStrings.js"></script>
+
 </footer>
 </html>
