@@ -104,6 +104,9 @@
         float: right;
         display: block;
     }
+    .navbar .name {
+        font-size: 18px;
+    }
 }
 
 /* Estilos para o menu móvel aberto */
