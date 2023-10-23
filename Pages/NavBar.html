@@ -1,53 +1,48 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../estyles/navbar.css">
-  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../estyles/navbar.css">
+    <meta charset="UTF-8">
 </head>
+
 <body>
-  <header>
-    <div class="navbar">
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-      <img src="../Resources/Images/fekler.jpeg" alt="Logo">
-      <a class="name" href="#home">Felipe Queiroz</a>
-      <div class="right-fields">
-        <select id="language-selector" onchange="changeLanguage(this.value)">
-          <option value="pt">Português</option>  
-          <option value="en">English</option>
-          <option value="es">Español</option>
-        </select>
-        <a href="#about">Sobre</a>
-        <a href="#portfolio">Portfólio</a>
-        <a href="#contact">Contato</a>
-      </div>
-    </div>
-  </header>
-  
-  <main id="content">
-    <article>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint labore cumque quidem, deleniti repudiandae veniam voluptate, sit recusandae nam aut consequuntur vitae aperiam, atque laudantium illum accusamus molestiae? Dolorem, quibusdam.
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, consequatur illo nemo eveniet dolores repellat accusantium! Enim aliquid incidunt eligendi quasi facere praesentium ullam nam eveniet blanditiis, labore dolore harum?
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam reiciendis fuga dignissimos ipsam expedita adipisci sapiente unde accusamus aperiam nisi, nihil commodi nulla id a quaerat voluptatibus error laborum veritatis.
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, harum! Animi ad natus totam recusandae sapiente placeat temporibus nostrum cupiditate cum! Ullam sequi ducimus dolore nobis sed maxime quis fugit?
-Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, quia consequatur? Iure quas tenetur, culpa corrupti reiciendis, accusamus quidem dignissimos sequi voluptates quibusdam aspernatur officiis assumenda reprehenderit praesentium placeat atque!
-    </article>
-  </main>
-  
-  <script>
-    function myFunction() {
-      var x = document.getElementsByClassName("navbar")[0];
-      if (x.className === "navbar") {
-        x.className += " responsive";
-      } else {
-        x.className = "navbar";
-      }
-    }
-    
-    function changeLanguage(selectedLanguage) {
-      // Aqui você pode adicionar o código para mudar o idioma da página
-      // Por exemplo, redirecionar para páginas em idiomas diferentes ou atualizar o conteúdo dinamicamente.
-    }
-  </script>
+    <header>
+        <div class="navbar">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+            <img href="#home" src="../Resources/Images/fekler.jpeg" alt="Logo">
+            <a class="name" href="#home">Felipe Queiroz</a>
+            <div class="right-fields">
+                <select id="language-selector" onchange="changeLanguage(this.value)">
+                    <option value="pt">Português</option>
+                    <option value="en">English</option>
+                </select>
+                <a id="about-link" href="#about"></a>
+                <a id="portfolio-link" href="#portfolio"></a>
+                <a id="contact-link" href="#contact"></a>
+            </div>
+        </div>
+    </header>
+
+    <main id="content">
+        <h1 id="greeting"></h1>
+    </main>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementsByClassName("navbar")[0];
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+    </script>
+
 </body>
+<footer>
+    <script src="../Scripts/LocalizationStrings.js"></script>
+
+</footer>
 </html>

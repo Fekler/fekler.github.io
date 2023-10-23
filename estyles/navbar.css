@@ -1,103 +1,134 @@
 /* Estilos CSS para a barra de navegação */
 .navbar {
     overflow: hidden;
-    background-color: #333; /* Cor de fundo da navbar */
-    position: fixed; /* Tornar a barra de navegação fixa no topo da página */
-    top: 0; /* Garantir que fique no topo da página */
-    width: 100%; /* Ocupar a largura total da página */
-    z-index: 1; /* Colocar a barra de navegação acima do conteúdo */
-  }
-  
-  /* Estilizando os links da navbar */
-  .navbar a {
+    background-color: rgb(3, 7, 18);
+    /* Cor de fundo da navbar */
+    position: fixed;
+    /* Tornar a barra de navegação fixa no topo da página */
+    top: 0;
+    /* Garantir que fique no topo da página */
+    width: 100%;
+    /* Ocupar a largura total da página */
+    z-index: 1;
+    /* Colocar a barra de navegação acima do conteúdo */
+    min-height: 70px;
+}
+
+/* Estilizando os links da navbar */
+.navbar a {
     float: left;
     font-size: 16px;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-  }
-  
-  /* Mudar a cor dos links quando o mouse passar por cima deles */
-  .navbar a:hover {
-    background-color: #ddd; /* Cor de fundo ao passar o mouse por cima */
-    color: black; /* Cor do texto ao passar o mouse por cima */
-  }
-  
-  /* Estilos para a imagem do logo na navbar */
-  .navbar img {
+}
+
+/* Mudar a cor dos links quando o mouse passar por cima deles */
+.navbar a:hover {
+    background-color: #ddd;
+    /* Cor de fundo ao passar o mouse por cima */
+    color: black;
+    /* Cor do texto ao passar o mouse por cima */
+}
+
+/* Estilos para a imagem do logo na navbar */
+.navbar img {
     float: left;
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
+    align-items: center;
     margin-right: 10px;
-    margin-left: 10px;
+    margin-left: 20px;
     border-radius: 50%;
-  }
-  
-  /* Estilos para o menu móvel */
-  .navbar a.icon {
+}
+
+/* Estilos para o menu móvel */
+.navbar a.icon {
     display: none;
-  }
-  
-  /* Estilos para o seletor de idioma */
-  .navbar select {
-    float: right; /* Mover o seletor de idioma para a direita */
-    padding: 10px;
-    background-color: #333; /* Cor de fundo do seletor */
+}
+
+/* Estilos para o seletor de idioma */
+.navbar select {
+    float: right;
+    /* Mover o seletor de idioma para a direita */
+    padding: 17px;
+    background-color: #333;
+    /* Cor de fundo do seletor */
     color: white;
     border: none;
-  }
-  
-  /* Estilos para o nome ao lado da imagem */
-  .navbar .name {
+}
+
+/* Estilos para o nome ao lado da imagem */
+.navbar .name {
     float: left;
     font-size: 18px;
     color: white;
     padding: 14px 0;
     text-decoration: none;
-  }
-  
-  .right-fields {
+}
+
+.right-fields {
     float: right;
-  }
-  
-  .right-fields select, .right-fields a {
-    margin-left: 10px; /* Espaçamento entre os campos */
-  }
-  
-  /* Adicionar margem superior ao conteúdo principal */
-  #content {
-    margin-top: 80px; /* Ajuste conforme necessário para corresponder à altura da barra de navegação */
-  }
-  
-  @media screen and (max-width: 600px) {
+    vertical-align: center;
+}
+.right-fields select,
+.right-fields a {
+    margin-left: 10px;
+    /* Espaçamento entre os campos */
+}
+
+/* Adicionar margem superior ao conteúdo principal */
+#content {
+    margin-top: 80px;
+    /* Ajuste conforme necessário para corresponder à altura da barra de navegação */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+@media screen and (max-width: 600px) {
     .navbar a:not(.name) {
-      display: none; /* Ocultar todos os itens, exceto o nome, em dispositivos móveis */
+        display: none;
+        /* Ocultar todos os itens, exceto o nome, em dispositivos móveis */
     }
-  
+
     .navbar a.icon {
-      float: right;
-      display: block;
+        float: right;
+        display: block;
     }
-  }
-  
-  /* Estilos para o menu móvel aberto */
-  .navbar.responsive {
+}
+
+/* Estilos para o menu móvel aberto */
+.navbar.responsive {
     position: relative;
-  }
-  
-  .navbar.responsive a.icon {
+}
+
+.navbar.responsive a.icon {
     position: absolute;
     right: 0;
     top: 0;
-  }
-  
-  .navbar.responsive a {
+}
+
+.navbar.responsive a {
     float: none;
     display: block;
     text-align: left;
-  }
-  body {
-    margin: 0; /* Remover a margem padrão do corpo */
-    padding: 0; /* Remover o preenchimento padrão do corpo */
-  }
+}
+
+body {
+    margin: 0;
+    /* Remover a margem padrão do corpo */
+    padding: 0;
+    /* Remover o preenchimento padrão do corpo */
+    background-color: rgb(15,25,40);
+}
+body h1{
+    color: white;
+    align-items: center;
+    
+}
+main{
+    background-color: rgb(15,25,40);
+}
