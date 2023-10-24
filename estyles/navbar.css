@@ -121,6 +121,13 @@
         float: right;
         display: block;
     }
+    .navbar .name {
+        font-size: 14px;
+    }
+    .navbar select {
+        font-size: 8px; /* Tamanho de fonte menor */
+        padding: 8px; /* Menos espaço entre os campos */
+    }
 }
 
 /* Estilos para o menu móvel aberto */
@@ -161,17 +168,60 @@ main {
 .divSkills {
     background-color: white;
     display: flex;
-    min-height: 100px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    max-width: 100%;
 }
+.divSkills span {
+    margin: 10px;
+    text-align: center;
+    position: relative;
 
+}
 .divSkills img {
     
     min-height: 45px;
     max-width: 80px;
     margin: 0 10px;
     margin-top: 10px;
-}
+    display: block;
+    transition: opacity 0.3s;
 
+}
+.divSkills img:hover {
+    opacity: 0.7;
+}
+.divSkills img[title]:hover:after {
+    content: attr(title);
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    white-space: nowrap;
+}
+.nav-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.nav-button:hover {
+    background-color: #0056b3;
+}
 
 .divPortifolio {
     background-color: rgb(230, 230, 230);
