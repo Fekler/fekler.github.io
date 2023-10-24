@@ -49,8 +49,8 @@
     opacity: 0.7;
 }
 .contact-button {
-    background-color: #007BFF;
-    color: #fff;
+    background-color: white;
+    color:black;
     border: none;
     border-radius: 50%;
     font-size: 20px;
@@ -62,5 +62,5 @@
 }
 
 .contact-button:hover {
-    background-color: #0056b3;
+    background-color: gray;
 }

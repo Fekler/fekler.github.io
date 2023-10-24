@@ -58,7 +58,7 @@
 }
 
 .skills-button {
-    background-color: #007BFF;
+    background-color:rgb(80, 80, 230);
     color: #fff;
     border: none;
     border-radius: 50%;
@@ -71,5 +71,5 @@
 }
 
 .skills-button:hover {
-    background-color: #0056b3;
+    background-color: rgb(15, 25, 40);
 }
