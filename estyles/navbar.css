@@ -121,20 +121,6 @@
         float: right;
         display: block;
     }
-<<<<<<< Updated upstream
-=======
-
-    .navbar .name {
-        font-size: 14px;
-    }
-
-    .navbar select {
-        font-size: 8px;
-        /* Tamanho de fonte menor */
-        padding: 8px;
-        /* Menos espaço entre os campos */
-    }
->>>>>>> Stashed changes
 }
 
 /* Estilos para o menu móvel aberto */
