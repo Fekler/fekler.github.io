@@ -5,6 +5,10 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="estyles/navbar.css">
+    <link rel="stylesheet" href="estyles/skills.css">
+    <link rel="stylesheet" href="estyles/contact.css">
+
+
     <meta charset="UTF-8">
     <title>Fekler</title>
 </head>
@@ -13,35 +17,37 @@
     <header>
         <div class="navbar">
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-            <img href="#home" src="Resources/Images/fekler.jpeg" alt="Logo">
-            <a class="name" href="#home">Felipe Queiroz</a>
+            <img href="#content" src="Resources/Images/fekler.jpeg" alt="Logo">
+            <a class="name" href="#content">Felipe Queiroz</a>
             <div class="right-fields">
                 <select id="language-selector" onchange="changeLanguage(this.value)">
                     <option value="pt">Português</option>
                     <option value="en">English</option>
                 </select>
-                <a id="about-link" href="#about"></a>
-                <a id="portfolio-link" href="#portfolio"></a>
-                <a id="contact-link" href="#contact"></a>
+                <a id="about-link" class="smooth" href="#content"></a>
+                <a id="portfolio-link" class="smooth" href="#portfolio"></a>
+                <a id="contact-link" class="smooth" href="#contact"></a>
             </div>
         </div>
     </header>
 
     <main id="content">
         <h1 id="greeting-link"></h1>
-        <p id="perfil-link">Aqui vai um texto falando sobre minhas aptdões e no que eu trabalho </hr>
+        <p id="perfil-link">Aqui vai um texto falando sobre minhas aptdões e no que eu trabalho
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates animi odio atque, debitis laboriosam
             ipsum veniam. Eos distinctio ratione repellat necessitatibus ea recusandae modi, soluta, nam eveniet qui
             possimus ab.</p>
     </main>
+    <div class="divSkills-title">
+        <h1 class="skills-title">Hard Skills </h1>
+    </div>
     <div class="divSkills">
-        <button id="prev-button" class="nav-button">&#8592;</button>
+        <button id="prev-button" class="skills-button">&#8592;</button>
         <span><img src="Resources/Images/csharp.png" alt="C#" title="C#"></span>
         <span><img src="Resources/Images/dotnet.png" alt=".NET Core" title=".NET Core"></span>
         <span><img src="Resources/Images/xamarin.png" alt="Xamarin Forms" title="Xamarin Forms"></span>
         <span><img src="Resources/Images/MAUI.png" alt=".NET MAUI" title=".NET MAUI"></span>
         <span><img src="Resources/Images/azure.png" alt="Azure Services" title="Azure Services"></span>
-        <span><img src="Resources/Images/github.png" alt="GitHub" title="Github"></span>
         <span><img src="Resources/Images/sql-server.png" alt="SQL Server" title="SQL Server"></span>
         <span><img src="Resources/Images/postgresql.png" alt="Postgres SQL" title="Postgres Server"></span>
         <span><img src="Resources/Images/redis.png" alt="Redis" title="Redis"></span>
@@ -49,12 +55,45 @@
         <span><img src="Resources/Images/mongodb.png" alt="MongoDB" title="MongoDB"></span>
         <span><img src="Resources/Images/docker.png" alt="Docker" title="Docker"></span>
         <span><img src="Resources/Images/microsoft.png" alt="Windows plataform" title="Windows Plataform"></span>
-        <button id="next-button" class="nav-button">&#8594;</button>
+        <span><img src="Resources/Images/github.png" alt="GitHub" title="Github"></span>
+
+        <button id="next-button" class="skills-button">&#8594;</button>
     </div>
     <div class="divPortifolio">
     </div>
-    <div class="divContact">
+    <div class="Contact" id="contact"> 
+        <div class="divTitle">
+            <h2 id="contact-title-link" class="contactTitle"></h2>
+        </div>
+        <div class="divContactContent">
+            <p id="contact-content-link"></p>
+        </div>
+        <div class="divContactIcon">
+            <button id="prev-contact-button" class="contact-button">&#8592;</button>
+            <span>
+                <a href="mailto:fekler.jobs@gmail.com">
+                    <img src="Resources/Images/gmailRound.png" alt="gmail" title="Email">
+                </a>
+            </span>
+            <span>
+                <a href="https://www.linkedin.com/in/fekler/">
+                    <img src="Resources/Images/linkedin.png" alt="LinkedIn" title="LinkedIn">
+                </a>
+            </span>
+            <span>
+                <a href="https://github.com/Fekler">
+                    <img src="Resources/Images/github.png" alt="GitHub" title="GitHub">
+                </a>
+            </span>
+            <span>
+                <a href="https://api.whatsapp.com/send?phone=5584933000468&text=Ol%C3%A1%2C%20Felipe!">
+                    <img src="Resources/Images/whatsapp.png" alt="Whatsapp" title="Whatsapp">
+                </a>
+            </span>
+            <button id="next-contact-button" class="contact-button">&#8594;</button>
+        </div>
     </div>
+
     </main>
 
     <script>
@@ -74,7 +113,9 @@
         <span id="righter-link" class="righter"></span>
     </div>
     <script src="Scripts/DivSkills.js"></script>
+    <script src="Scripts/DivContact.js"></script>
     <script src="Scripts/LocalizationStrings.js"></script>
+    <script src="Scripts/SmothScroll.js"></script>
 
 </footer>
 

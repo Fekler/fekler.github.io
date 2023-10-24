@@ -1,0 +1,75 @@
+.divSkills-title{
+    background-color: white;
+    min-height: 60px;
+}
+.skills-title {
+    text-align: center;
+    font-size: 2.25rem;
+    margin: 10px 0;
+    line-height: 59px;
+    color: rgb(5, 5, 20);
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.divSkills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    max-width: 100%;
+    background-color: white;
+    text-align: center;
+}
+
+.divSkills span {
+    text-align: center;
+    margin: 10px;
+    position: relative;
+}
+
+.divSkills img {
+    max-width: 100px;
+    height: 80px;
+    display: block;
+    transition: opacity 0.3s;
+    margin: 0 10px;
+    margin-top: 10px;
+
+}
+.divSkills img:hover {
+    opacity: 0.7;
+}
+.divSkills img[title]:hover:after {
+    content: attr(title);
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    white-space: nowrap;
+}
+
+.skills-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.skills-button:hover {
+    background-color: #0056b3;
+}
