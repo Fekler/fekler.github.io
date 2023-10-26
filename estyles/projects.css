@@ -1,46 +1,79 @@
+/* Estilos baseados no código CSS fornecido */
 .project {
     display: flex;
     align-items: flex-start;
     margin-bottom: 20px;
     background-color: rgb(230, 230, 230);
     min-height: 200px;
-
 }
-.project-div-title{
+
+.project-div-title {
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-
     background-color: rgb(230, 230, 230);
 }
-.portifolio-title{
+
+.portifolio-title {
     text-align: center;
     font-size: 2.25rem;
-    line-height: 59px;
+    line-height: 1.2;
     color: rgb(5, 5, 20);
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
+    margin: 20px 0;
 }
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+}
+
+.project-item {
+    flex: 10 0 calc(40% - 0%);
+    margin: 0 2% 30px 2%;
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex; /* Adicione esta linha */
+}
+
+.project-item .project-image {
+    flex: 0 0 80px; /* Defina a largura da imagem para 80px */
+    margin-right: 20px; /* Espaço entre a imagem e o título */
+}
+
+.project-image img {
+    max-width: 100%;
+    height: auto;
+    max-height: 80px; /* Define a altura máxima da imagem para 80px */
+}
+
+.project-item .project-details {
+    flex: 1; /* Ocupa o restante do espaço disponível */
+}
+
+/* Estilos para telas menores (por exemplo, dispositivos móveis) */
+@media (max-width: 768px) {
+    .project-list {
+        display: block;
+    }
+
+    .project-item {
+        flex: 100%;
+    }
+}
+
 .divPortifolio {
     background-color: rgb(230, 230, 230);
     min-height: 200px;
 }
-.project-image {
-    margin-right: 20px;
-}
 
-.project-image img {
-    max-width: 100px; /* Tamanho máximo da imagem à esquerda */
-}
-
-.project-details {
-    flex: 1;
-    max-width: 80%;
-
-}
 .project-text-container {
     max-width: 80%;
-
 }

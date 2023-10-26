@@ -11,7 +11,7 @@ class LocalizationStrings {
 
     static NAV_PORTFOLIO = {
         en: "Portfolio",
-        pt: "Portfólio"
+        pt: "Portifólio"
     };
 
     static NAV_CONTACT = {
