@@ -85,36 +85,6 @@
     /* Espaçamento entre os campos */
 }
 
-/* Adicionar margem superior ao conteúdo principal */
-#content {
-    margin-top: 100px;
-    /* Ajuste conforme necessário para corresponder à altura da barra de navegação */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: auto;
-    flex-direction: column;
-    /* Adicionado para alinhar o conteúdo verticalmente */
-    margin-bottom: 50px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
-}
-
-#content p {
-    display: block;
-    /* Torna o parágrafo um bloco */
-    margin-top: 20px;
-    /* Ajuste conforme necessário para o espaçamento desejado */
-    text-align: center;
-    /* Alinha o texto ao centro */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 16px;
-    /* Tamanho de fonte desejado */
-    color: white;
-    width: 80%;
-    margin: 0 auto;
-}
-
 @media screen and (max-width: 600px) {
     .navbar a:not(.name) {
         display: none;
@@ -156,23 +126,6 @@
 .navbar.responsive a hover{
     height: 40px;
 }
-body {
-    margin: 0;
-    /* Remover a margem padrão do corpo */
-    padding: 0;
-    /* Remover o preenchimento padrão do corpo */
-    background-color: rgb(15, 25, 40);
-}
-
-body h1 {
-    color: white;
-    align-items: center;
-
-}
-
-main {
-    background-color: rgb(15, 25, 40);
-}
 
 
 .divPortifolio {
@@ -182,29 +135,3 @@ main {
 
 
 
-.footer {
-    overflow: hidden;
-    background-color: rgb(5, 5, 20);
-    /* Cor de fundo da navbar */
-    /* Tornar a barra de navegação fixa no topo da página */
-    bottom: 0;
-    /* Garantir que fique no topo da página */
-    width: 100%;
-    /* Ocupar a largura total da página */
-    z-index: 1;
-    /* Colocar a barra de navegação acima do conteúdo */
-    min-height: 70px;
-}
-
-.righter {
-    float: left;
-    font-size: 22px;
-    font-weight: bolder;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    margin-left: 5px;
-    text-decoration: none;
-    line-height: 50px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
