@@ -8,18 +8,20 @@
 }
 .project-div-title{
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    max-width: 100%;
+
+    background-color: rgb(230, 230, 230);
+}
+.portifolio-title{
     text-align: center;
     font-size: 2.25rem;
-    margin: 10px 0;
     line-height: 59px;
     color: rgb(5, 5, 20);
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 .divPortifolio {
     background-color: rgb(230, 230, 230);
