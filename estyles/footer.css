@@ -1,0 +1,26 @@
+.footer {
+    overflow: hidden;
+    background-color: rgb(5, 5, 20);
+    /* Cor de fundo da navbar */
+    /* Tornar a barra de navegação fixa no topo da página */
+    bottom: 0;
+    /* Garantir que fique no topo da página */
+    width: 100%;
+    /* Ocupar a largura total da página */
+    z-index: 1;
+    /* Colocar a barra de navegação acima do conteúdo */
+    min-height: 70px;
+}
+
+.righter {
+    float: left;
+    font-size: 22px;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    margin-left: 5px;
+    text-decoration: none;
+    line-height: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

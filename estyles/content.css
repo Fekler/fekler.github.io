@@ -1,0 +1,8 @@
+body {
+    margin: 0;
+    /* Remover a margem padrão do corpo */
+    padding: 0;
+    /* Remover o preenchimento padrão do corpo */
+    background-color: rgb(15, 25, 40);
+
+}
