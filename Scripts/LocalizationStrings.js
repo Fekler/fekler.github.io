@@ -37,9 +37,9 @@ class LocalizationStrings {
     };
 
     static SKILLS_CONTENT = {
-        en: "I have a Bachelor's degree in Information Technology Management, where I graduated with honors as the top performer. My proficiency in the English language is fluent. My experience encompasses the creation and maintenance of applications involving features such as location control (GPS) and facial recognition, the latter integrated with Amazon Web Services (AWS). I am also familiar with development tools like Git and Team Foundation Server (TFS). I have a track record of effective collaboration with multidisciplinary development teams, including designers, software engineers, and project managers.",
+        en: "I have a Bachelor's degree in Information Technology Management, where I graduated with honors as the top performer. My proficiency in the English language is fluent. My experience encompasses the creation and maintenance of applications involving features such as location control (GPS) and facial recognition, the latter integrated with Amazon Web Services (AWS). I am also familiar with development tools like Git and Team Foundation Server (TFS). I have a track record of effective collaboration with multidisciplinary development teams, software engineers, and project managers.",
 
-        pt: "Tenho Graduação Superior tecnologica em Gestão da Tecnologia da informação, onde recebi honras como melhor concluinte, Minha proficiência na língua inglesa é fluente.   Minha experiência abrange a criação e manutenção de aplicativos que envolvem funcionalidades como controle de localização (GPS) e validação facial, esta última com integração da Amazon Web Services (AWS). Também estou familiarizado com ferramentas de desenvolvimento, como Git e Team Foundation Server(TFS).  Tenho um histórico de colaboração eficaz com equipes de desenvolvimento multidisciplinares, incluindo designers, engenheiros de software e gerentes de projetos."
+        pt: "Tenho Graduação Superior tecnologica em Gestão da Tecnologia da informação, onde recebi honras como melhor concluinte, Minha proficiência na língua inglesa é fluente.   Minha experiência abrange a criação e manutenção de aplicativos que envolvem funcionalidades como controle de localização (GPS) e validação facial, esta última com integração da Amazon Web Services (AWS). Também estou familiarizado com ferramentas de desenvolvimento, como Git e Team Foundation Server(TFS).  Tenho um histórico de colaboração eficaz com equipes de desenvolvimento multidisciplinares, engenheiros de software e gerentes de projetos."
     };
 
     static TEC_TITLE = {
@@ -70,8 +70,8 @@ class LocalizationStrings {
         pt: "AppGallery "
     };
     static PROJECT_DESCRIPTION_CONTENT1 = {
-        en: "Personal project aimed at testing and gaining proficiency in all the components and elements of Xamarin Forms. This Android-compiled application is available on the store and showcases the implementation of key components.",
-        pt: "Iniciativa pessoal para testar e aprofundar o conhecimento em todos os componentes e elementos do Xamarin Forms. Este aplicativo, compilado para Android, está disponível na loja e apresenta a implementação de componentes-chave"
+        en: "Personal project aimed at testing and gaining proficiency in all the components and elements of Xamarin Forms. This Android-compiled application is available on the store and showcases the implementation of all key components.",
+        pt: "Iniciativa pessoal para testar e aprofundar o conhecimento em todos os componentes e elementos do Xamarin Forms. Este aplicativo, compilado para Android, está disponível na loja e apresenta a implementação de todos componentes-chave"
     };
     static PROJECT_STACKS_CONTENT1 = {
         en: "Programming Language: C#, Database: SQLite, Framework: Xamarin Forms",
@@ -92,11 +92,6 @@ class LocalizationStrings {
     static RIGHTER = {
         en:"© 2023 Felipe Queiroz",
         pt:"© 2023 Felipe Queiroz"
-    };
-    static SKILLS_CONTENT = {
-        en: "My proficiency in the English language is fluent. My experience encompasses the creation and maintenance of applications involving features such as location control (GPS) and facial recognition, the latter integrated with Amazon Web Services (AWS). I am also familiar with development tools like Git and Team Foundation Server (TFS). I have a track record of effective collaboration with multidisciplinary development teams, including designers, software engineers, and project managers. ",
-
-        pt: "Minha proficiência na língua inglesa é fluente.   Minha experiência abrange a criação e manutenção de aplicativos que envolvem funcionalidades como controle de localização (GPS) e validação facial, esta última com integração da Amazon Web Services (AWS). Também estou familiarizado com ferramentas de desenvolvimento, como Git e Team Foundation Server(TFS).  Tenho um histórico de colaboração eficaz com equipes de desenvolvimento multidisciplinares, incluindo designers, engenheiros de software e gerentes de projetos."
     };
 
     static TEC_TITLE = {
