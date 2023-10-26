@@ -4,10 +4,14 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="estyles/about.css">
+    <link rel="stylesheet" href="estyles/contact.css">
+    <link rel="stylesheet" href="estyles/content.css">
+    <link rel="stylesheet" href="estyles/footer.css">
     <link rel="stylesheet" href="estyles/navbar.css">
     <link rel="stylesheet" href="estyles/skills.css">
     <link rel="stylesheet" href="estyles/contact.css">
-
+    <link rel="stylesheet" href="estyles/projects.css">
 
     <meta charset="UTF-8">
     <title>Fekler</title>
@@ -32,68 +36,104 @@
     </header>
 
     <main id="content">
-        <h1 id="greeting-link"></h1>
-        <p id="perfil-link"></p>
-        <h1 id="skill-title-link">Habilidades</h1>
-        <p id="skill-content-link"></p>
+        <div id="about" class="divAbout">
+            <h1 id="greeting-link" class="h1-greeting"></h1>
+            <p id="perfil-link"></p>
+            <h1 id="skill-title-link"></h1>
+            <p id="skill-content-link"></p>
+        </div>
+        <div class="divSkills-title">
+            <h1 id="tec-title-link" class="skills-title"></h1>
+        </div>
+        <div class="divSkills">
+            <button id="prev-button" class="skills-button">&#8592;</button>
+            <span><img src="Resources/Images/csharp.png" alt="C#" title="C#"></span>
+            <span><img src="Resources/Images/dotnet.png" alt=".NET Core" title=".NET Core"></span>
+            <span><img src="Resources/Images/xamarin.png" alt="Xamarin Forms" title="Xamarin Forms"></span>
+            <span><img src="Resources/Images/MAUI.png" alt=".NET MAUI" title=".NET MAUI"></span>
+            <span><img src="Resources/Images/azure.png" alt="Azure Services" title="Azure Services"></span>
+            <span><img src="Resources/Images/sql-server.png" alt="SQL Server" title="SQL Server"></span>
+            <span><img src="Resources/Images/postgresql.png" alt="Postgres SQL" title="Postgres SQL"></span>
+            <span><img src="Resources/Images/redis.png" alt="Redis" title="Redis"></span>
+            <span><img src="Resources/Images/sqlite.png" alt="SQLite" title="SQLite"></span>
+            <span><img src="Resources/Images/mongodb.png" alt="MongoDB" title="MongoDB"></span>
+            <span><img src="Resources/Images/docker.png" alt="Docker" title="Docker"></span>
+            <span><img src="Resources/Images/microsoft.png" alt="Windows plataform" title="Windows Plataform"></span>
+            <span><img src="Resources/Images/github.png" alt="GitHub" title="Github"></span>
 
-    </main>
-    <div class="divSkills-title">
-        <h1 id="tec-title-link" class="skills-title"></h1>
-    </div>
-    <div class="divSkills">
-        <button id="prev-button" class="skills-button">&#8592;</button>
-        <span><img src="Resources/Images/csharp.png" alt="C#" title="C#"></span>
-        <span><img src="Resources/Images/dotnet.png" alt=".NET Core" title=".NET Core"></span>
-        <span><img src="Resources/Images/xamarin.png" alt="Xamarin Forms" title="Xamarin Forms"></span>
-        <span><img src="Resources/Images/MAUI.png" alt=".NET MAUI" title=".NET MAUI"></span>
-        <span><img src="Resources/Images/azure.png" alt="Azure Services" title="Azure Services"></span>
-        <span><img src="Resources/Images/sql-server.png" alt="SQL Server" title="SQL Server"></span>
-        <span><img src="Resources/Images/postgresql.png" alt="Postgres SQL" title="Postgres SQL"></span>
-        <span><img src="Resources/Images/redis.png" alt="Redis" title="Redis"></span>
-        <span><img src="Resources/Images/sqlite.png" alt="SQLite" title="SQLite"></span>
-        <span><img src="Resources/Images/mongodb.png" alt="MongoDB" title="MongoDB"></span>
-        <span><img src="Resources/Images/docker.png" alt="Docker" title="Docker"></span>
-        <span><img src="Resources/Images/microsoft.png" alt="Windows plataform" title="Windows Plataform"></span>
-        <span><img src="Resources/Images/github.png" alt="GitHub" title="Github"></span>
-
-        <button id="next-button" class="skills-button">&#8594;</button>
-    </div>
-    <div class="divPortifolio">
-        <!--<h1>Projetos & experiência</h1>-->
-    </div>
-    <div class="Contact" id="contact">
-        <div class="divTitle">
-            <h2 id="contact-title-link" class="contactTitle"></h2>
+            <button id="next-button" class="skills-button">&#8594;</button>
         </div>
-        <div class="divContactContent">
-            <p id="contact-content-link"></p>
+        <div class="project-div-title">            <h1 id="portfolio-title-link">Projetos & experiência</h1>
         </div>
-        <div class="divContactIcon">
-            <button id="prev-contact-button" class="contact-button">&#8592;</button>
-            <span>
-                <a href="mailto:fekler.jobs@gmail.com">
-                    <img src="Resources/Images/gmailRound.png" alt="gmail" title="Email">
-                </a>
-            </span>
-            <span>
-                <a href="https://www.linkedin.com/in/fekler/">
-                    <img src="Resources/Images/linkedin.png" alt="LinkedIn" title="LinkedIn">
-                </a>
-            </span>
-            <span>
-                <a href="https://github.com/Fekler">
-                    <img src="Resources/Images/github.png" alt="GitHub" title="GitHub">
-                </a>
-            </span>
-            <span>
-                <a href="https://api.whatsapp.com/send?phone=5584933000468&text=Ol%C3%A1%2C%20Felipe!">
-                    <img src="Resources/Images/whatsapp.png" alt="Whatsapp" title="Whatsapp">
-                </a>
-            </span>
-            <button id="next-contact-button" class="contact-button">&#8594;</button>
+        <div class="project">
+            <div class="project-image">
+                <img src="Resources/Images/AppGallery.png" alt="AppGallery" title="AppGallery">
+            </div>
+            <div class="project-details">
+                <h2 id="project-title" class="project-title">Projeto: </h2>
+                <h2 id="project-title-content" class="project-title-content"></h2>
+                <br>
+                <span id="project-description" class="project-description">Descrição: </span> <span
+                    id="project-description-content" class="project-description-content"></span>
+                <br>
+                <span id="project-stacks" class="project-stacks">Tecnologias: </span><span id="project-stacks-content"
+                    class="project-stacks-content"></span>
+                <br>
+                <span id="project-sourceCode" class="project-sourceCode">CódigoFonte</span> <span
+                    id="project-sourceCode-content" class="project-sourceCode-content"><a href="">https://github.com/Fekler/AppGallery</a></span>
+            </div>
         </div>
-    </div>
+        <div class="divPortifolio">
+            <h1 id="portfolio-title-link">Projetos & experiência</h1>
+            <div id="Divproject">
+                <span><img src="" alt="" class="project-image"></span>
+                <div id="project-text-container">
+                    <span id="project-title" class="project-title"></span> <span id="project-title-content"
+                        class="project-title-content"></span>
+                    <br>
+                    <span id="project-description" class="project-description"> </span>
+                    <p id="project-description-content" class="project-description-content"></p>
+                    <br>
+                    <span id="project-stacks" class="project-stacks"></span> <span id="project-stacks-content"
+                        class="project-stacks-content"></span>
+                    <br>
+                    <span id="project-sourceCode" class="project-sourceCode"> </span><span
+                        id="project-sourceCode-content" class="project-sourceCode-content"> </span>
+                </div>
+            </div>
+        </div>
+        <div class="Contact" id="contact">
+            <div class="divTitle">
+                <h2 id="contact-title-link" class="contactTitle"></h2>
+            </div>
+            <div class="divContactContent">
+                <p id="contact-content-link"></p>
+            </div>
+            <div class="divContactIcon">
+                <button id="prev-contact-button" class="contact-button">&#8592;</button>
+                <span>
+                    <a href="mailto:fekler.jobs@gmail.com">
+                        <img src="Resources/Images/gmailRound.png" alt="gmail" title="Email">
+                    </a>
+                </span>
+                <span>
+                    <a href="https://www.linkedin.com/in/fekler/">
+                        <img src="Resources/Images/linkedin.png" alt="LinkedIn" title="LinkedIn">
+                    </a>
+                </span>
+                <span>
+                    <a href="https://github.com/Fekler">
+                        <img src="Resources/Images/github.png" alt="GitHub" title="GitHub">
+                    </a>
+                </span>
+                <span>
+                    <a href="https://api.whatsapp.com/send?phone=5584933000468&text=Ol%C3%A1%2C%20Felipe!">
+                        <img src="Resources/Images/whatsapp.png" alt="Whatsapp" title="Whatsapp">
+                    </a>
+                </span>
+                <button id="next-contact-button" class="contact-button">&#8594;</button>
+            </div>
+        </div>
 
     </main>
 
