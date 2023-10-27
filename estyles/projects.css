@@ -41,6 +41,8 @@
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex; /* Adicione esta linha */
+    flex-direction: column; /* Altere para uma disposição de coluna */
+    text-align: center; /* Centralize o conteúdo */
 }
 
 .project-item .project-image {
@@ -56,6 +58,15 @@
 
 .project-item .project-details {
     flex: 1; /* Ocupa o restante do espaço disponível */
+    text-align: left; /* Alinhe o texto à esquerda */
+
+}
+.project-description, .project-stacks, .project-sourceCode {
+    font-weight: bold;
+}
+
+.project-description-content, .project-stacks-content, .project-sourceCode-content {
+    word-wrap: break-word; /* Quebra de palavras para evitar que o texto ultrapasse o contêiner */
 }
 
 /* Estilos para telas menores (por exemplo, dispositivos móveis) */
