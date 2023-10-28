@@ -1,87 +1,80 @@
-/* Estilos baseados no código CSS fornecido */
-.project {
+.divExperience {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 1px;
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(80, 80, 230);
     min-height: 300px;
-}
+    padding-top: 10px;
 
-.project-div-title {
+}
+.experience-div-title{
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(80, 80, 230);
 }
-
-.portifolio-title {
+.experience-title {
     text-align: center;
     font-size: 2.25rem;
     line-height: 1.2;
-    color: rgb(5, 5, 20);
+    color: white;
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 30px 0;
 }
-
-.project-list {
+.experience-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     list-style: none;
     padding: 0;
 }
-.project-title {
+.experience-title {
     margin-top: 30px;
 }
-.project-item {
+.experience-item {
     flex: 10 0 calc(40% - 0%);
     margin: 0 2% 30px 2%;
-    border: 1px solid #ccc;
-    padding: 20px;
     background-color: #fff;
+    border: 1px solid #e1e1e1;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    display: flex; /* Adicione esta linha */
-    flex-direction: column; /* Altere para uma disposição de coluna */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
     text-align: center; /* Centralize o conteúdo */
+
+}
+.expience-details {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.project-item .project-image {
-    flex: 0 0 80px; /* Defina a largura da imagem para 80px */
-    margin-right: 20px; /* Espaço entre a imagem e o título */
+.experience-header {
+    flex: 0 0 50%; /* Divide em duas colunas */
+    padding: 5px;
 }
 
-.project-image img {
-    max-width: 100%;
-    height: auto;
-    max-height: 80px; /* Define a altura máxima da imagem para 80px */
-}
-
-.project-item .project-details {
+.experience-item .experience-details {
     flex: 1; /* Ocupa o restante do espaço disponível */
     text-align: left; /* Alinhe o texto à esquerda */
 
 }
-.project-description, .project-stacks, .project-sourceCode,.project-title {
+.company-job-description, .company-stacks, .company-job-workperiod,.company-title,.company-job {
     font-weight: bold;
 }
 
-.project-description-content, .project-stacks-content, .project-sourceCode-content {
+.company-job-description-content, .company-stacks-content {
     word-wrap: break-word; /* Quebra de palavras para evitar que o texto ultrapasse o contêiner */
 }
 
 /* Estilos para telas menores (por exemplo, dispositivos móveis) */
 @media (max-width: 768px) {
-    .project-list {
+    .experience-list {
         display: block;
     }
 
-    .project-item {
+    .experience-item {
         flex: 100%;
     }
 }
 
-.project-text-container {
-    max-width: 80%;
-}

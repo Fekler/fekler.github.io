@@ -1,4 +1,5 @@
 class LocalizationStrings {
+    
     static LANG = {
         en: "en",
         pt: "pt",
@@ -13,6 +14,10 @@ class LocalizationStrings {
         en: "Portfolio",
         pt: "Portifólio"
     };
+    static NAV_EXPERIENCE = {
+        en: "Experience",
+        pt: "Experiência"
+    };
 
     static NAV_CONTACT = {
         en: "Contact",
@@ -25,9 +30,9 @@ class LocalizationStrings {
     };
 
     static PERFIL = {
-        en: "I am a .NET Developer with three years of experience, during which I have been involved in the development of .NET Core APIs following the Clean Architecture pattern. I have also adopted Test-Driven Development(TDD) and Clean Code practices to ensure code quality using the language C#. Additionally, I have participated in the creation and maintenance of applications using Xamarin Forms. I also have experience in integrating APIs using the REST protocol.    I am constantly seeking opportunities for growth, dedicating myself to study in order to achieve my professional goals. I have a deep knowledge of the Xamarin and MAUI frameworks and apply the principles of SOLID, Clean Code, and Clean Architecture in my development projects.",
+        en: "I am a .NET Developer Backend and Mobile with three years of experience, during which I have been involved in the development of .NET Core APIs following the Clean Architecture pattern. I have also adopted Test-Driven Development(TDD) and Clean Code practices to ensure code quality using the language C#. Additionally, I have participated in the creation and maintenance of applications using Xamarin Forms. I also have experience in integrating APIs using the REST protocol.    I am constantly seeking opportunities for growth, dedicating myself to study in order to achieve my professional goals. I have a deep knowledge of the Xamarin and MAUI frameworks and how to apply the principles of SOLID, Clean Code, and Clean Architecture in my development projects.",
 
-        pt: "Sou um Desenvolvedor .NET com três anos de experiência, durante os quais estive envolvido na elaborção de API's em .NET Core, seguindo o padrão Clean Architecture, e adotei práticas de Test-Driven Development(TDD) e Clean Code para garantir a qualidade do código utilizando a linguagem C#, além disso participei da criação e manutenção de aplicativos utilizando Xamarin Forms.    Também tenho experiência na integração de API's por meio do protocolo REST. Estou constantemente buscando oportunidades de crescimento, dedicando-me ao estudo para alcançar meus objetivos profissionais. Tenho um profundo conhecimento dos frameworks Xamarin e MAUI e aplico os princípios SOLID, Clean Code e Clean Architecture em meus projetos de desenvolvimento. "
+        pt: "Sou um Desenvolvedor .NET Backend e Mobile com três anos de experiência , durante os quais estive envolvido no desenvolvimento de API's em .NET Core, seguindo o padrão Clean Architecture, e adotei práticas de Test-Driven Development(TDD) e Clean Code para garantir a qualidade do código utilizando a linguagem C#, além disso participei da criação e manutenção de aplicativos utilizando Xamarin Forms.    Também tenho experiência na integração de API's por meio do protocolo REST. Estou constantemente buscando oportunidades de crescimento, dedicando-me ao estudo para alcançar meus objetivos profissionais. Tenho um profundo conhecimento dos frameworks Xamarin e MAUI e aplicação os princípios SOLID, Clean Code e Clean Architecture em meus projetos de desenvolvimento. "
     };
 
     static SKILLS_TITLE = {
@@ -78,6 +83,70 @@ class LocalizationStrings {
         pt: "Linguagem de programação: C#, Banco de dados: SQLite, Framework: Xamarin Forms"
     };
 
+    static EXPERIENCE_TITLE = {
+        en: "Experiences",
+        pt: "Experiências"
+    }
+    static COMPANY_WORK_TITLE = {
+        en: "Company: ",
+        pt: "Empresa: "
+    }
+    static COMPANY_WORK_PERIOD = {
+        en: "Period: ",
+        pt: "Período: "
+    }
+    static COMPANY_WORK_JOB = {
+        en: "Role: ",
+        pt: "Função: "
+    }
+    static COMPANY_WORK_JOB_DESCRIPTION = {
+        en: "Description: ",
+        pt: "Descrição: "
+    }
+    static COMPANY_WORK_JOB_SKILLS = {
+        en: "Skills and Technologies: ",
+        pt: "Habilidades e Tecnologias: "
+    }
+    static COMPANY_WORK_TITLE_CONTENT1 = {
+        en: "Kenta Informatica",
+        pt: "Kenta Informatica"
+    }
+    static COMPANY_WORK_PERIOD_CONTENT1 = {
+        en: "April 2023 - at the moment",
+        pt: "Abril de 2023 - até o momento"
+    }
+    static COMPANY_WORK_JOB_CONTENT1 = {
+        en: ".NET Developer Backend and Mobile",
+        pt: "Desenvolvedor .NET Backend e Mobile"
+    }
+    static COMPANY_WORK_JOB_DESCRIPTION_CONTENT1 = {
+        en: "Design, analyze and develop features and solutions; Contribute to the development of new technologies; Actively participate in meetings with clients to identify and map system requirements; Consume APIs; Integrate and consume cloud and database resources; Continuous improvement of developed systems.",
+        pt: "Projetar, analisar e desenvolver funcionalidades e soluções, Contribuir no desenvolvimento de novas tecnologias; Participar ativamente de reuniões com cliente para identificação e mapeamento de requisitos de sistemas; Consumir APIs; Integrar e consumir recursos de nuvem, de banco de dados; Melhoria contínua dos sistemas desenvolvidos."
+    }
+    static COMPANY_WORK_JOB_SKILLS_CONTENT1 = {
+        en: ".NET, C#, Xamarin Forms, API ASP.NET, SQL SERVER, Dapper(ORM), Jira, Trello, TFS, Visual Studio",
+        pt: "NET, C#, Xamarin Forms, API ASP.NET, SQL SERVER, Dapper(ORM), Jira, Trello, TFS, Visual Studio"
+    }
+    static COMPANY_WORK_TITLE_CONTENT2 = {
+        en: "Kenta Informatica",
+        pt: "Kenta Informatica"
+    }
+    static COMPANY_WORK_PERIOD_CONTENT2 = {
+        en: "Sept 2017 - April 2022",
+        pt: "Set de 2017 - Abr 2022"
+    }
+    static COMPANY_WORK_JOB_CONTENT2 = {
+        en: "Technical Support",
+        pt: "Técnico de Suporte"
+    }
+    static COMPANY_WORK_JOB_DESCRIPTION_CONTENT2 = {
+        en: "Technical support and implementation of systems, assisting repair and identification of failures, application of corrections of the tool used in CFC's and public agencies, relationship with customer, feedback of problems in the resolution of errors found registering in a call tool, verification of customer satisfaction at the end of the problem solved, implementation of software via remote and face-to-face,  Training for customers, employees and partners.",
+        pt: "Suporte Técnico e implantação de sistemas, Auxiliando reparação e identificação de falhas, aplicação de correções da ferramenta utilizada em CFC´s e orgãos públicos, relacionamento com cliente, feedback de problemas na resolução dos erros encontrados registrando em ferramenta de chamados, verificação de satisfação com cliente ao fim do problema solucionado, implantação de software via remoto e presencial, treinamentos para clientes, colaboradores e parceiros.."
+    }
+    static COMPANY_WORK_JOB_SKILLS_CONTENT2 = {
+        en: "Analytical skills, computer skills, Windows, Remote access, implementation of systems",
+        pt: "Capacidade analítica, Conhecimentos em informática, Windows, Acesso remoto, Implantação de sistemas"
+    }
 
     static CONTACT_TITLE = {
         en: "Let's connect ",
@@ -122,7 +191,7 @@ function changeLanguage(selectedLanguage) {
     var aboutLink = document.getElementById("about-link");
 
     var portfolioLink = document.getElementById("portfolio-link");
-
+    var experienceLink = document.getElementById("experience-link");
     var contactLink = document.getElementById("contact-link");
     var greetingLink = document.getElementById("greeting-link");
 
@@ -131,23 +200,45 @@ function changeLanguage(selectedLanguage) {
     var skillContentLink = document.getElementById("skill-content-link");
     var tecTitleLink = document.getElementById("tec-title-link");
 
-    var projectTitleLink = document.getElementById("project-title");
-    var projectDescriptionLink = document.getElementById("project-description");
-    var projectStackLink = document.getElementById("project-stacks");
-    var projectSourceCodeLink = document.getElementById("project-sourceCode");
+    var projectTitleLinks = document.querySelectorAll(".project-title");
+    var projectDescriptionLinks = document.querySelectorAll(".project-description");
+    var projectStackLinks = document.querySelectorAll(".project-stacks");
+    var projectSourceCodeLinks = document.querySelectorAll(".project-sourceCode");
+    
 
     var projectTitleContentLink = document.getElementById("project-title-content");
     var projectDescriptionContentLink = document.getElementById("project-description-content");
     var projectStacksContentLink = document.getElementById("project-stacks-content");
 
+    var experienceTitleLink = document.getElementById("experience-title-link");
+
+    var experienceTitleLinks = document.querySelectorAll(".company-title");
+    var experiencePeriodLinks = document.querySelectorAll(".company-job-workperiod");
+    var experienceJobLinks = document.querySelectorAll(".company-job");
+    var experienceDescriptionLinks = document.querySelectorAll(".company-job-description");
+    var experienceStackLinks = document.querySelectorAll(".company-stacks");
+
+    var experienceTitleContentLinks = document.getElementById("company-title-content");
+    var experiencePeriodContentLinks = document.getElementById("company-job-workperiod-content");
+    var experienceJobContentLinks = document.getElementById("company-job-content");
+    var experienceDescriptionContentLinks = document.getElementById("company-job-description-content");
+    var experienceStackContentLinks = document.getElementById("company-stacks-content");
+
+    var experienceTitleContentLinks2 = document.getElementById("company-title-content2");
+    var experiencePeriodContentLinks2 = document.getElementById("company-job-workperiod-content2");
+    var experienceJobContentLinks2 = document.getElementById("company-job-content2");
+    var experienceDescriptionContentLinks2 = document.getElementById("company-job-description-content2");
+    var experienceStackContentLinks2 = document.getElementById("company-stacks-content2");
 
     var contactTitleLink = document.getElementById("contact-title-link");
     var contactContentLink = document.getElementById("contact-content-link");
-    var righterLink = document.getElementById("righter-link");
 
+    var righterLink = document.getElementById("righter-link");
+    
 
     aboutLink.textContent = LocalizationStrings.NAV_ABOUT[selectedLanguage];
     portfolioLink.textContent = LocalizationStrings.NAV_PORTFOLIO[selectedLanguage];
+    experienceLink.textContent = LocalizationStrings.NAV_EXPERIENCE[selectedLanguage];
     contactLink.textContent = LocalizationStrings.NAV_CONTACT[selectedLanguage];
     greetingLink.textContent = LocalizationStrings.GREETING[selectedLanguage];
     contactTitleLink.textContent = LocalizationStrings.CONTACT_TITLE[selectedLanguage];
@@ -161,20 +252,67 @@ function changeLanguage(selectedLanguage) {
     skillContentLink.textContent = LocalizationStrings.SKILLS_CONTENT[selectedLanguage];
     tecTitleLink.textContent = LocalizationStrings.TEC_TITLE[selectedLanguage];
 
-    projectTitleLink.textContent = LocalizationStrings.PROJECT_TITLE[selectedLanguage];
-    projectDescriptionLink.textContent = LocalizationStrings.PROJECT_DESCRIPTION[selectedLanguage];
-    projectStackLink.textContent = LocalizationStrings.PROJECT_STACKS[selectedLanguage];
-    projectSourceCodeLink.textContent = LocalizationStrings.PROJECT_SOURCE_CODE[selectedLanguage];
+    projectTitleLinks.forEach(function (link) {
+        link.textContent = LocalizationStrings.PROJECT_TITLE[selectedLanguage]
+    });
+    
+    projectDescriptionLinks.forEach(function (link) {
+        link.textContent = LocalizationStrings.PROJECT_DESCRIPTION[selectedLanguage];
+    });
+    
+    projectStackLinks.forEach(function (link) {
+        link.textContent = LocalizationStrings.PROJECT_STACKS[selectedLanguage];
+    });
+    
+    projectSourceCodeLinks.forEach(function (link) {
+        link.textContent = LocalizationStrings.PROJECT_SOURCE_CODE[selectedLanguage];
+    });
 
     projectTitleContentLink.textContent = LocalizationStrings.PROJECT_TITLE_CONTENT1[selectedLanguage];
     projectDescriptionContentLink.textContent = LocalizationStrings.PROJECT_DESCRIPTION_CONTENT1[selectedLanguage];
     projectStacksContentLink.textContent = LocalizationStrings.PROJECT_STACKS_CONTENT1[selectedLanguage];
 
+    experienceTitleLink.textContent = LocalizationStrings.EXPERIENCE_TITLE[selectedLanguage];
+
+    experienceTitleLinks.forEach(function (link) {
+        link.textContent = LocalizationStrings.COMPANY_WORK_TITLE[selectedLanguage]
+    });
+    
+    experiencePeriodLinks.forEach(function (link) {
+        link.textContent = LocalizationStrings.COMPANY_WORK_PERIOD[selectedLanguage];
+    });
+    
+    experienceJobLinks.forEach(function (link) {
+        link.textContent = LocalizationStrings.COMPANY_WORK_JOB[selectedLanguage];
+    });
+    
+    experienceDescriptionLinks.forEach(function (link) {
+        link.textContent = LocalizationStrings.COMPANY_WORK_JOB_DESCRIPTION[selectedLanguage];
+    });
+
+    experienceStackLinks.forEach(function (link) {
+        link.textContent = LocalizationStrings.COMPANY_WORK_JOB_SKILLS[selectedLanguage];
+    });
+    
+    experienceTitleContentLinks.textContent = LocalizationStrings.COMPANY_WORK_TITLE_CONTENT1[selectedLanguage];
+    experiencePeriodContentLinks.textContent = LocalizationStrings.COMPANY_WORK_PERIOD_CONTENT1[selectedLanguage];
+    experienceJobContentLinks.textContent = LocalizationStrings.COMPANY_WORK_JOB_CONTENT1[selectedLanguage];
+    experienceDescriptionContentLinks.textContent = LocalizationStrings.COMPANY_WORK_JOB_DESCRIPTION_CONTENT1[selectedLanguage];
+    experienceStackContentLinks.textContent = LocalizationStrings.COMPANY_WORK_JOB_SKILLS_CONTENT1[selectedLanguage];
+
+    experienceTitleContentLinks2.textContent = LocalizationStrings.COMPANY_WORK_TITLE_CONTENT2[selectedLanguage];
+    experiencePeriodContentLinks2.textContent = LocalizationStrings.COMPANY_WORK_PERIOD_CONTENT2[selectedLanguage];
+    experienceJobContentLinks2.textContent = LocalizationStrings.COMPANY_WORK_JOB_CONTENT2[selectedLanguage];
+    experienceDescriptionContentLinks2.textContent = LocalizationStrings.COMPANY_WORK_JOB_DESCRIPTION_CONTENT2[selectedLanguage];
+    experienceStackContentLinks2.textContent = LocalizationStrings.COMPANY_WORK_JOB_SKILLS_CONTENT2[selectedLanguage];
+
+
     righterLink.textContent = LocalizationStrings.RIGHTER[selectedLanguage];
 
-}
 
+}
 document.addEventListener("DOMContentLoaded", function () {
+
     // Coloque seu código JavaScript aqui para garantir que a página tenha sido carregada completamente.
     changeLanguage("pt"); // Defina o idioma padrão aqui, se necessário.
 });
