@@ -1,6 +1,8 @@
 .Contact {
-    background-color: rgb(80, 80, 230);
-    min-height: 280px;
+    background-color: white;
+    min-height: 300px;
+    padding-top: 20px;
+
 }
 .divTitle h2{
     text-align: Center;
@@ -8,7 +10,7 @@
     margin: 0px 0;
     line-height: 59px;
     margin-left: 15px;
-    color: white;
+    color: black;
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
@@ -16,7 +18,7 @@
 .divContactContent p{
     text-align: Center;
     font-size: 1rem;
-    color: white;
+    color: black;
     margin-left: 15px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 

@@ -25,9 +25,9 @@ class LocalizationStrings {
     };
 
     static PERFIL = {
-        en: "I am a .NET Developer with three years of experience, during which I have been involved in the development of .NET Core APIs following the Clean Architecture pattern. I have also adopted Test-Driven Development(TDD) and Clean Code practices to ensure code quality using the language C#. Additionally, I have participated in the creation and maintenance of applications using Xamarin Forms. I also have experience in integrating APIs using the REST protocol.    I am constantly seeking opportunities for growth, dedicating myself to study in order to achieve my professional goals. I have a deep knowledge of the Xamarin and MAUI frameworks and apply the principles of SOLID, Clean Code, and Clean Architecture in my development projects.",
+        en: "I am a .NET Developer with three years of experience, during which I have been involved in the development of .NET Core APIs following the Clean Architecture pattern. I have also adopted Test-Driven Development(TDD) and Clean Code practices to ensure code quality using the language C#. Additionally, I have participated in the creation and maintenance of applications using Xamarin Forms. I also have experience in integrating APIs using the REST protocol.    I am constantly seeking opportunities for growth, dedicating myself to study in order to achieve my professional goals. I have a deep knowledge of the Xamarin and MAUI frameworks and how to apply the principles of SOLID, Clean Code, and Clean Architecture in my development projects.",
 
-        pt: "Sou um Desenvolvedor .NET com três anos de experiência, durante os quais estive envolvido na elaborção de API's em .NET Core, seguindo o padrão Clean Architecture, e adotei práticas de Test-Driven Development(TDD) e Clean Code para garantir a qualidade do código utilizando a linguagem C#, além disso participei da criação e manutenção de aplicativos utilizando Xamarin Forms.    Também tenho experiência na integração de API's por meio do protocolo REST. Estou constantemente buscando oportunidades de crescimento, dedicando-me ao estudo para alcançar meus objetivos profissionais. Tenho um profundo conhecimento dos frameworks Xamarin e MAUI e aplico os princípios SOLID, Clean Code e Clean Architecture em meus projetos de desenvolvimento. "
+        pt: "Sou um Desenvolvedor .NET com três anos de experiência, durante os quais estive envolvido no desenvolvimento de API's em .NET Core, seguindo o padrão Clean Architecture, e adotei práticas de Test-Driven Development(TDD) e Clean Code para garantir a qualidade do código utilizando a linguagem C#, além disso participei da criação e manutenção de aplicativos utilizando Xamarin Forms.    Também tenho experiência na integração de API's por meio do protocolo REST. Estou constantemente buscando oportunidades de crescimento, dedicando-me ao estudo para alcançar meus objetivos profissionais. Tenho um profundo conhecimento dos frameworks Xamarin e MAUI e aplicação os princípios SOLID, Clean Code e Clean Architecture em meus projetos de desenvolvimento. "
     };
 
     static SKILLS_TITLE = {
@@ -78,6 +78,10 @@ class LocalizationStrings {
         pt: "Linguagem de programação: C#, Banco de dados: SQLite, Framework: Xamarin Forms"
     };
 
+    static EXPERIENCE_TITLE = {
+        en: "Experiences",
+        pt: "Experiências"
+    }
 
     static CONTACT_TITLE = {
         en: "Let's connect ",
@@ -140,6 +144,7 @@ function changeLanguage(selectedLanguage) {
     var projectDescriptionContentLink = document.getElementById("project-description-content");
     var projectStacksContentLink = document.getElementById("project-stacks-content");
 
+    var experienceTitleLink = document.getElementById("experience-title-link");
 
     var contactTitleLink = document.getElementById("contact-title-link");
     var contactContentLink = document.getElementById("contact-content-link");
@@ -169,6 +174,8 @@ function changeLanguage(selectedLanguage) {
     projectTitleContentLink.textContent = LocalizationStrings.PROJECT_TITLE_CONTENT1[selectedLanguage];
     projectDescriptionContentLink.textContent = LocalizationStrings.PROJECT_DESCRIPTION_CONTENT1[selectedLanguage];
     projectStacksContentLink.textContent = LocalizationStrings.PROJECT_STACKS_CONTENT1[selectedLanguage];
+
+    experienceTitleLink.textContent = LocalizationStrings.EXPERIENCE_TITLE[selectedLanguage];
 
     righterLink.textContent = LocalizationStrings.RIGHTER[selectedLanguage];
 
