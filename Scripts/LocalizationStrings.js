@@ -237,6 +237,7 @@ function changeLanguage(selectedLanguage) {
     
 
     aboutLink.textContent = LocalizationStrings.NAV_ABOUT[selectedLanguage];
+    
     portfolioLink.textContent = LocalizationStrings.NAV_PORTFOLIO[selectedLanguage];
     experienceLink.textContent = LocalizationStrings.NAV_EXPERIENCE[selectedLanguage];
     contactLink.textContent = LocalizationStrings.NAV_CONTACT[selectedLanguage];
