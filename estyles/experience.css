@@ -1,7 +1,10 @@
 .divExperience {
+    display: flex;
+    align-items: flex-start;
     background-color: rgb(80, 80, 230);
     min-height: 300px;
     padding-top: 10px;
+
 }
 .experience-div-title{
     display: flex;
@@ -23,34 +26,32 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    list-style: none;
+    padding: 0;
 }
 .experience-title {
     margin-top: 30px;
 }
 .experience-item {
+    flex: 10 0 calc(40% - 0%);
+    margin: 0 2% 30px 2%;
     background-color: #fff;
     border: 1px solid #e1e1e1;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin: 20px 0;
     padding: 20px;
     display: flex;
     flex-direction: column;
+    text-align: center; /* Centralize o conteúdo */
+
 }
 .expience-details {
     display: flex;
     flex-wrap: wrap;
 }
-.experience-item { 
-    margin-right: 20px; /* Espaço entre a imagem e o título */
-}
+
 .experience-header {
     flex: 0 0 50%; /* Divide em duas colunas */
     padding: 5px;
-}
-.project-image img {
-    max-width: 100%;
-    height: auto;
-    max-height: 80px; /* Define a altura máxima da imagem para 80px */
 }
 
 .experience-item .experience-details {
@@ -68,15 +69,12 @@
 
 /* Estilos para telas menores (por exemplo, dispositivos móveis) */
 @media (max-width: 768px) {
-    .project-list {
+    .experience-list {
         display: block;
     }
 
-    .project-item {
+    .experience-item {
         flex: 100%;
     }
 }
 
-.project-text-container {
-    max-width: 80%;
-}
