@@ -112,8 +112,8 @@ class LocalizationStrings {
         pt: "Kenta Informatica"
     }
     static COMPANY_WORK_PERIOD_CONTENT1 = {
-        en: "April 2023 - at the moment",
-        pt: "Abril de 2023 - até o momento"
+        en: "April 2022 - at the moment",
+        pt: "Abri de 2022 - até o momento"
     }
     static COMPANY_WORK_JOB_CONTENT1 = {
         en: ".NET Developer Backend and Mobile",
