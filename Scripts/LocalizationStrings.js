@@ -200,6 +200,8 @@ function changeLanguage(selectedLanguage) {
     var skillContentLink = document.getElementById("skill-content-link");
     var tecTitleLink = document.getElementById("tec-title-link");
 
+    var portfolioTitleLink = document.getElementById("portfolio-title-link");
+
     var projectTitleLinks = document.querySelectorAll(".project-title");
     var projectDescriptionLinks = document.querySelectorAll(".project-description");
     var projectStackLinks = document.querySelectorAll(".project-stacks");
@@ -252,6 +254,8 @@ function changeLanguage(selectedLanguage) {
     skillTitleLink.textContent = LocalizationStrings.SKILLS_TITLE[selectedLanguage];
     skillContentLink.textContent = LocalizationStrings.SKILLS_CONTENT[selectedLanguage];
     tecTitleLink.textContent = LocalizationStrings.TEC_TITLE[selectedLanguage];
+
+    portfolioTitleLink.textContent = LocalizationStrings.NAV_PORTFOLIO[selectedLanguage]
 
     projectTitleLinks.forEach(function (link) {
         link.textContent = LocalizationStrings.PROJECT_TITLE[selectedLanguage]
