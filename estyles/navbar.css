@@ -38,13 +38,13 @@
 /* Estilos para a imagem do logo na navbar */
 .navbar img {
     float: left;
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     align-items: center;
     margin-right: 10px;
     margin-left: 20px;
     border-radius: 50%;
-    cursor: pointer;
+    margin-top: 10px;
 }
 
 /* Estilos para o menu móvel */
