@@ -3,18 +3,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 110vh;
+    padding-top: 100px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .image-container {
     flex: 1;
     text-align: center;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
+    width: 50%; /* Adicione uma largura fixa para a imagem */
 }
 
 .greetings-text-content {
@@ -24,47 +20,103 @@ img {
     margin-right: 3%;
     color: white;
 }
+.h1-greeting{
+    text-align: start;
+    color: white;
+}
 
+.perfil-link{
+    margin-top: 2rem;
+    text-align: start;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.25rem;
+    color: white;
+}
 .about-content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
+    align-items: start;
+    margin-left: 5%;
+    margin-right: 5%;
+    max-width: 90%;
 
-}
 
-.skill-content-link {
-    color: white;
-    font-size: 1.5rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    word-wrap: break-word; /* Adicionado para quebrar palavras longas em duas linhas */
-    max-width: 95%;
-    text-align: center;
 }
 .skill-title-link{
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-    margin-top: -50px;
-}
-
-.divAbout h1 {
     text-align: start;
+}
+.skill-content-link {
     color: white;
-    margin-left: 10px;
-}
-
-.divAbout p {
-    display: block;
-    margin-top: 2rem;
-    text-align: start;
+    font-size: 1.25rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1.5rem;
-    color: white;
+    word-wrap: break-word; /* Adicionado para quebrar palavras longas em duas linhas */
+    text-align: start;
+    margin-bottom: 50px;
+
 }
+
 
 @media screen and (max-width: 767px) {
     .divAbout {
         flex-direction: column;
+    }
+    .perfil-link{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .h1-greeting
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    img {
+        max-width: 80%;
+        height: auto;
+    }
+    .about-content {
+
+        justify-content: center;
+        align-items: center; 
+    }
+    .skill-title-link{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        }
+    .skill-content-link {
+
+        text-align: center;
+    }
+}
+@media screen and (min-width: 1280px){
+    .h1-greeting
+    {
+        font-size: 4.5rem;
+        line-height: 1;
+    }
+}
+@media screen and (min-width: 1024px){
+    .h1-greeting
+    {
+        font-size: 3.75rem;
+        line-height: 1;
+    }
+}
+@media screen and (min-width: 768px){
+    .h1-greeting
+    {
+        font-size: 3rem;
+        line-height: 1;
     }
 }

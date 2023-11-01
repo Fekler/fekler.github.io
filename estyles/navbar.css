@@ -85,7 +85,7 @@
     /* Espaçamento entre os campos */
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
     .navbar a:not(.name) {
         display: none;
         /* Ocultar todos os itens, exceto o nome, em dispositivos móveis */

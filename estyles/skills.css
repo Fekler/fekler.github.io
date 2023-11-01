@@ -1,3 +1,14 @@
+.divSkills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    max-width: 100%;
+    background-color: white;
+    text-align: center;
+    padding-bottom: 30px;
+}
 .divSkills-title {
     background-color: white;
     min-height: 60px;
@@ -27,16 +38,7 @@
     text-align: center;
 }
 
-.divSkills {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    max-width: 100%;
-    background-color: white;
-    text-align: center;
-}
+
 
 .divSkills span {
     text-align: center;
