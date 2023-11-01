@@ -1,16 +1,28 @@
-.divSkills-title{
+.divSkills-title {
     background-color: white;
     min-height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
 .skills-title {
     text-align: center;
     font-size: 2.25rem;
-    line-height: 59px;
     color: rgb(5, 5, 20);
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 30px 0;
+    margin: 5px 0; /* Reduzi a margem para evitar que o título fique muito longe do conteúdo */
+}
 
+.skill-content {
+    font-size: 1.25rem;
+    color: rgb(5, 5, 20);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    word-wrap: break-word; /* Adicionado para quebrar palavras longas em duas linhas */
+    max-width: 60%;
+    text-align: center;
 }
 
 .divSkills {
@@ -62,14 +74,17 @@
     color: #fff;
     border: none;
     border-radius: 50%;
-    font-size: 20px;
+    font-weight: bolder;
+    font-size: 1.5rem;
     width: 40px;
     height: 40px;
     margin: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
+
 }
 
 .skills-button:hover {
+    color:darkcyan;
     background-color: rgb(15, 25, 40);
 }

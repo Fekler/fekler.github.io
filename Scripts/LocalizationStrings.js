@@ -53,6 +53,11 @@ class LocalizationStrings {
 
     };
 
+    static TEC_CONTENT = {
+        en: "The following are the main technologies that I master and use on a daily basis to solve professional problems.",
+        pt: "Abaixo, as principais tecnologias que domino e utilizo no dia-a-dia para solução de problemas profissionais."
+    };
+
     static PROJECT_TITLE = {
         en: "Project: ",
         pt: "Projeto: "
@@ -199,6 +204,8 @@ function changeLanguage(selectedLanguage) {
     var skillTitleLink = document.getElementById("skill-title-link");
     var skillContentLink = document.getElementById("skill-content-link");
     var tecTitleLink = document.getElementById("tec-title-link");
+    var tecContentLink = document.getElementById("tec-content-link");
+
 
     var portfolioTitleLink = document.getElementById("portfolio-title-link");
 
@@ -250,6 +257,7 @@ function changeLanguage(selectedLanguage) {
     skillTitleLink.textContent = LocalizationStrings.SKILLS_TITLE[selectedLanguage];
     skillContentLink.textContent = LocalizationStrings.SKILLS_CONTENT[selectedLanguage];
     tecTitleLink.textContent = LocalizationStrings.TEC_TITLE[selectedLanguage];
+    tecContentLink.textContent = LocalizationStrings.TEC_CONTENT[selectedLanguage];
 
     skillTitleLink.textContent = LocalizationStrings.SKILLS_TITLE[selectedLanguage];
     skillContentLink.textContent = LocalizationStrings.SKILLS_CONTENT[selectedLanguage];
