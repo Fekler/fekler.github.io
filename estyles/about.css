@@ -1,68 +1,63 @@
 .divAbout {
     background-color: rgb(15, 25, 40);
-    margin-top: 100px;
-    /* Ajuste conforme necessário para corresponder à altura da barra de navegação */
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height:max-content;
-    flex-direction: column;
-    /* Adicionado para alinhar o conteúdo verticalmente */
-    margin-bottom: 5rem;
+    min-height: 100vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
+.image-container {
+    flex: 1;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.text-content {
+    flex: 1;
+    text-align: start;
+    padding: 20px;
+    color: white;
+}
+
+.skill-content {
+    flex: 1;
+    text-align: center; /* Alinhe o texto ao centro horizontalmente */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centralize o conteúdo verticalmente */
+    align-items: center; /* Centralize o conteúdo horizontalmente */
+    color: white;
+}
+
+
+
+
+#skill-title-link, #skill-content-link {
+    color: white; /* Define a cor da fonte para branca */
+    text-align: center; /* Alinha o texto ao centro */
 }
 
 .divAbout h1 {
-
     color: white;
     margin-left: 10px;
 }
+
 .divAbout p {
     display: block;
-    /* Torna o parágrafo um bloco */
     margin-top: 2rem;
-    /* Ajuste conforme necessário para o espaçamento desejado */
     text-align: start;
-    /* Alinha o texto ao centro */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1.5rem;
-    /* Tamanho de fonte desejado */
     color: white;
-    width: 80%;
-    margin: 0 auto;
-}
-@media screen and (min-width: 1280px){
-    .h1-greeting
-    {
-        font-size: 4.5rem;
-        line-height: 1;
-    }
-}
-@media screen and (min-width: 1024px){
-    .h1-greeting
-    {
-        font-size: 3.75rem;
-        line-height: 1;
-    }
-}
-@media screen and (min-width: 768px){
-    .h1-greeting
-    {
-        font-size: 3rem;
-        line-height: 1;
-    }
 }
 
-@media screen and (max-width: 767){
-    .h1-greeting
-    {
-        font-size: 2rem;
-        text-align: center;
-    }
-    .divAbout p{
-        font-size: 1rem;
-        text-align: center;
+@media screen and (max-width: 767px) {
+    .divAbout {
+        flex-direction: column;
     }
 }
-
