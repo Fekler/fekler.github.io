@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    min-height: 110vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -17,32 +17,39 @@ img {
     height: auto;
 }
 
-.text-content {
+.greetings-text-content {
     flex: 1;
-    text-align: start;
+    text-align: center;
+    flex-direction: column;
     padding: 20px;
     color: white;
 }
 
-.skill-content {
-    flex: 1;
-    text-align: center; /* Alinhe o texto ao centro horizontalmente */
+.about-content {
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centralize o conteúdo verticalmente */
-    align-items: center; /* Centralize o conteúdo horizontalmente */
-    color: white;
+    justify-content: center;
+    align-items: center;
+
 }
 
-
-
-
-#skill-title-link, #skill-content-link {
-    color: white; /* Define a cor da fonte para branca */
-    text-align: center; /* Alinha o texto ao centro */
+.skill-content-link {
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    word-wrap: break-word; /* Adicionado para quebrar palavras longas em duas linhas */
+    max-width: 80%;
+    text-align: center;
+}
+.skill-title-link{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-top: -50px;
 }
 
 .divAbout h1 {
+    text-align: start;
     color: white;
     margin-left: 10px;
 }
