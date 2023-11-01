@@ -21,7 +21,7 @@ img {
     flex: 1;
     text-align: center;
     flex-direction: column;
-    padding: 20px;
+    margin-right: 3%;
     color: white;
 }
 
@@ -38,7 +38,7 @@ img {
     font-size: 1.5rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     word-wrap: break-word; /* Adicionado para quebrar palavras longas em duas linhas */
-    max-width: 80%;
+    max-width: 95%;
     text-align: center;
 }
 .skill-title-link{
