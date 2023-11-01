@@ -14,6 +14,8 @@
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 5px 0; /* Reduzi a margem para evitar que o título fique muito longe do conteúdo */
+    line-height: 59px;
+
 }
 
 .skill-content {

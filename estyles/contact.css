@@ -7,9 +7,8 @@
 .divTitle h2{
     text-align: Center;
     font-size: 2.25rem;
-    margin: 0px 0;
+    margin: 5px 0;
     line-height: 59px;
-    margin-left: 15px;
     color: black;
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -17,9 +16,8 @@
 }
 .divContactContent p{
     text-align: Center;
-    font-size: 1rem;
+    font-size: 1.25rem;
     color: black;
-    margin-left: 15px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
