@@ -257,6 +257,7 @@ function changeLanguage(selectedLanguage) {
     skillTitleLink.textContent = LocalizationStrings.SKILLS_TITLE[selectedLanguage];
     skillContentLink.textContent = LocalizationStrings.SKILLS_CONTENT[selectedLanguage];
     tecTitleLink.textContent = LocalizationStrings.TEC_TITLE[selectedLanguage];
+    
     tecContentLink.textContent = LocalizationStrings.TEC_CONTENT[selectedLanguage];
 
     skillTitleLink.textContent = LocalizationStrings.SKILLS_TITLE[selectedLanguage];
