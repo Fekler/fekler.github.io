@@ -89,11 +89,13 @@
     .navbar a:not(.name) {
         display: none;
         /* Ocultar todos os itens, exceto o nome, em dispositivos móveis */
+
     }
 
     .navbar a.icon {
         float: right;
         display: block;
+        
     }
     .navbar .name {
         font-size: 14px;

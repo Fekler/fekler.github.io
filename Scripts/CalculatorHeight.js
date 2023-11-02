@@ -14,7 +14,8 @@ function adjustImageHeight() {
     else{
         imageContainer.style.maxWidth = "80%";
         imageContainer.style.height = "auto";
-    }
+    } 
+    
 }
 
 // Chame a função quando o DOM estiver pronto
