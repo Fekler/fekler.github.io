@@ -5,7 +5,7 @@
     justify-content: center;
     padding-top: 100px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
+
 }
 
 .image-container {
@@ -120,4 +120,5 @@
         font-size: 3rem;
         line-height: 1;
     }
+    
 }
