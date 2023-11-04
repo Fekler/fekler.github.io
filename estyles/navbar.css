@@ -108,7 +108,7 @@
 
 /* Estilos para o menu móvel aberto */
 .navbar.responsive {
-    z-index: 1;
+    z-index: 2;
     top: 0;
     position: fixed;
 }
