@@ -12,14 +12,23 @@
     text-align: center;
     width: 50%; /* Adicione uma largura fixa para a imagem */
 }
-
+#img-perfil {
+    max-width: 100%; /* A imagem não excederá a largura da div */
+    height: auto; /* A altura será ajustada automaticamente de acordo com a largura */
+    display: block; /* Evitar espaços em branco indesejados */
+    margin: 0 auto; /* Centralizar a imagem horizontalmente */
+    position: relative; /* Para que a imagem não cubra outros elementos */
+}
 .greetings-text-content {
     flex: 1;
     text-align: center;
     flex-direction: column;
     margin-right: 3%;
     color: white;
+    z-index: 1; /* Elevar o conteúdo de saudação para estar na frente da imagem */
+    position: relative; /* Garantir que o posicionamento funcione corretamente */
 }
+
 .h1-greeting{
     text-align: start;
     color: white;
@@ -77,6 +86,7 @@
         justify-content: center;
         align-items: center;
         text-align: center;
+        font-size: 3rem; /* Tamanho de fonte padrão */
     }
     img {
         max-width: 80%;
@@ -99,24 +109,15 @@
         text-align: center;
     }
 }
-@media screen and (min-width: 1280px){
-    .h1-greeting
-    {
-        font-size: 4.5rem;
-        line-height: 1;
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .h1-greeting {
+        font-size: 3.5rem; /* Tamanho de fonte intermediário */
     }
 }
-@media screen and (min-width: 1024px){
-    .h1-greeting
-    {
-        font-size: 3.75rem;
-        line-height: 1;
-    }
-}
-@media screen and (min-width: 768px){
-    .h1-greeting
-    {
-        font-size: 3rem;
-        line-height: 1;
+
+/* Aumenta o tamanho da fonte para telas maiores (a partir de 1024px) */
+@media screen and (min-width: 1024px) {
+    .h1-greeting {
+        font-size: 4.5rem; /* Tamanho de fonte maior para telas maiores */
     }
 }
