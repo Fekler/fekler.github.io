@@ -27,11 +27,11 @@
         <div class="navbar">
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
             <img href="#content" src="Resources/Images/fekler.jpeg" alt="Logo">
-            <a class="name" href="#content">Felipe Queiroz</a>
+            <a id="NavBarName" class="name" href="#content">Felipe Queiroz</a>
             <div class="right-fields">
                 <select id="language-selector" onchange="changeLanguage(this.value)">
                     <option value="pt">&#127463;&#127479; Português</option>
-                    <option value="en">&#127482;&#127480;  English</option>
+                    <option value="en">&#127482;&#127480; English</option>
                 </select>
                 <a id="about-link" class="smooth" href="#content"></a>
                 <a id="portfolio-link" class="smooth" href="#portifolio"></a>
@@ -57,26 +57,27 @@
         </div>
         <div class="divSkills-title">
             <h1 id="tec-title-link" class="skills-title"></h1>
-            
+
             <span id="tec-content-link" class="skill-content"></span>
         </div>
         <div class="divSkills">
             <button id="prev-button" class="skills-button"><</button>
-            <span><img src="Resources/Images/csharp.png" alt="C#" title="C#"></span>
-            <span><img src="Resources/Images/dotnet.png" alt=".NET Core" title=".NET Core"></span>
-            <span><img src="Resources/Images/xamarin.png" alt="Xamarin Forms" title="Xamarin Forms"></span>
-            <span><img src="Resources/Images/MAUI.png" alt=".NET MAUI" title=".NET MAUI"></span>
-            <span><img src="Resources/Images/azure.png" alt="Azure Services" title="Azure Services"></span>
-            <span><img src="Resources/Images/sql-server.png" alt="SQL Server" title="SQL Server"></span>
-            <span><img src="Resources/Images/postgresql.png" alt="Postgres SQL" title="Postgres SQL"></span>
-            <span><img src="Resources/Images/redis.png" alt="Redis" title="Redis"></span>
-            <span><img src="Resources/Images/sqlite.png" alt="SQLite" title="SQLite"></span>
-            <span><img src="Resources/Images/mongodb.png" alt="MongoDB" title="MongoDB"></span>
-            <span><img src="Resources/Images/docker.png" alt="Docker" title="Docker"></span>
-            <span><img src="Resources/Images/microsoft.png" alt="Windows plataform" title="Windows Plataform"></span>
-            <span><img src="Resources/Images/github.png" alt="GitHub" title="Github"></span>
+                    <span><img src="Resources/Images/csharp.png" alt="C#" title="C#"></span>
+                    <span><img src="Resources/Images/dotnet.png" alt=".NET Core" title=".NET Core"></span>
+                    <span><img src="Resources/Images/xamarin.png" alt="Xamarin Forms" title="Xamarin Forms"></span>
+                    <span><img src="Resources/Images/MAUI.png" alt=".NET MAUI" title=".NET MAUI"></span>
+                    <span><img src="Resources/Images/azure.png" alt="Azure Services" title="Azure Services"></span>
+                    <span><img src="Resources/Images/sql-server.png" alt="SQL Server" title="SQL Server"></span>
+                    <span><img src="Resources/Images/postgresql.png" alt="Postgres SQL" title="Postgres SQL"></span>
+                    <span><img src="Resources/Images/redis.png" alt="Redis" title="Redis"></span>
+                    <span><img src="Resources/Images/sqlite.png" alt="SQLite" title="SQLite"></span>
+                    <span><img src="Resources/Images/mongodb.png" alt="MongoDB" title="MongoDB"></span>
+                    <span><img src="Resources/Images/docker.png" alt="Docker" title="Docker"></span>
+                    <span><img src="Resources/Images/microsoft.png" alt="Windows plataform"
+                            title="Windows Plataform"></span>
+                    <span><img src="Resources/Images/github.png" alt="GitHub" title="Github"></span>
 
-            <button id="next-button" class="skills-button">></button>
+                    <button id="next-button" class="skills-button">></button>
         </div>
         <div class="project-div-title" id="portifolio">
             <h1 class="portifolio-title" id="portfolio-title-link"></h1>
@@ -94,14 +95,14 @@
                         <span id="project-description" class="project-description"> </span> <span
                             id="project-description-content" class="project-description-content"></span>
                         <br>
-                        <span id="project-stacks" class="project-stacks"> </span><span
-                            id="project-stacks-content" class="project-stacks-content"></span>
+                        <span id="project-stacks" class="project-stacks"> </span><span id="project-stacks-content"
+                            class="project-stacks-content"></span>
                         <br>
                         <span id="project-sourceCode" class="project-sourceCode"></span> <span
                             id="project-sourceCode-content" class="project-sourceCode-content"><a
                                 href="">https://github.com/Fekler/AppGallery</a></span>
                     </div>
-                </li>                                
+                </li>
                 <!--<li class="project-item">
                     <div class="project-image">
                         <img src="" alt="" title="">
@@ -193,63 +194,48 @@
             </div>
             <div class="divContactIcon">
                 <button id="prev-contact-button" class="contact-button"><</button>
-                <span>
-                    <a href="mailto:fekler.jobs@gmail.com">
-                        <img src="Resources/Images/gmailRound.png" alt="gmail" title="Email">
-                    </a>
-                </span>
-                <span>
-                    <a href="https://www.linkedin.com/in/fekler/">
-                        <img src="Resources/Images/linkedin.png" alt="LinkedIn" title="LinkedIn">
-                    </a>
-                </span>
-                <span>
-                    <a href="https://github.com/Fekler">
-                        <img src="Resources/Images/github.png" alt="GitHub" title="GitHub">
-                    </a>
-                </span>
-                <span>
-                    <a href="https://api.whatsapp.com/send?phone=5584933000468&text=Ol%C3%A1%2C%20Felipe!">
-                        <img src="Resources/Images/whatsapp.png" alt="Whatsapp" title="Whatsapp">
-                    </a>
-                </span>
-                <button id="next-contact-button" class="contact-button">></button>
+                        <span>
+                            <a href="mailto:fekler.jobs@gmail.com">
+                                <img src="Resources/Images/gmailRound.png" alt="gmail" title="Email">
+                            </a>
+                        </span>
+                        <span>
+                            <a href="https://www.linkedin.com/in/fekler/">
+                                <img src="Resources/Images/linkedin.png" alt="LinkedIn" title="LinkedIn">
+                            </a>
+                        </span>
+                        <span>
+                            <a href="https://github.com/Fekler">
+                                <img src="Resources/Images/github.png" alt="GitHub" title="GitHub">
+                            </a>
+                        </span>
+                        <span>
+                            <a href="https://api.whatsapp.com/send?phone=5584933000468&text=Ol%C3%A1%2C%20Felipe!">
+                                <img src="Resources/Images/whatsapp.png" alt="Whatsapp" title="Whatsapp">
+                            </a>
+                        </span>
+                        <button id="next-contact-button" class="contact-button">></button>
             </div>
         </div>
 
     </main>
 
     <script>
-    function myFunction() {
-        var x = document.getElementsByClassName("navbar")[0];
-        var links = document.querySelectorAll(".navbar a:not(.icon)");
 
-        if (x.className === "navbar") {
-            x.className += " responsive";
-        } else {
-            x.className = "navbar";
-        }
-
-        // Feche o menu móvel se um link for clicado
-        for (var i = 0; i < links.length; i++) {
-            links[i].addEventListener("click", function () {
-                x.className = "navbar";
-            });
-        }
-    }
     </script>
+    <footer>
+        <div class="footer">
+            <span id="righter-link" class="righter"></span>
+        </div>
+        <script src="Scripts/NavBar.js"></script>
+        <script src="Scripts/DivSkills.js"></script>
+        <script src="Scripts/DivContact.js"></script>
+        <script src="Scripts/LocalizationStrings.js"></script>
+        <script src="Scripts/SmothScroll.js"></script>
+        <script src="Scripts/CalculatorHeight.js"></script>
 
+    </footer>
 </body>
-<footer>
-    <div class="footer">
-        <span id="righter-link" class="righter"></span>
-    </div>
-    <script src="Scripts/DivSkills.js"></script>
-    <script src="Scripts/DivContact.js"></script>
-    <script src="Scripts/LocalizationStrings.js"></script>
-    <script src="Scripts/SmothScroll.js"></script>
-    <script src="Scripts/CalculatorHeight.js"></script>
 
-</footer>
 
 </html>
