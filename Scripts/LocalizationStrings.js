@@ -125,8 +125,8 @@ class LocalizationStrings {
         pt: "Desenvolvedor .NET Backend e Mobile"
     }
     static COMPANY_WORK_JOB_DESCRIPTION_CONTENT1 = {
-        en: "Design, analyze and develop features and solutions; Contribute to the development of new technologies; Actively participate in meetings with clients to identify and map system requirements; Consume APIs; Integrate and consume cloud and database resources; Continuous improvement of developed systems.",
-        pt: "Projetar, analisar e desenvolver funcionalidades e soluções, Contribuir no desenvolvimento de novas tecnologias; Participar ativamente de reuniões com cliente para identificação e mapeamento de requisitos de sistemas; Consumir APIs; Integrar e consumir recursos de nuvem, de banco de dados; Melhoria contínua dos sistemas desenvolvidos."
+        en: "I developed products and APIs, designing and implementing their functionalities, while actively contributing to new projects. I conducted the mapping of functional and non-functional requirements, as well as business rules, ensuring a solid foundation for development. I also played a key role in creating efficient integrations between APIs and applications, utilizing resources both embedded and in the cloud. Additionally, I participated in supporting completed projects, ensuring their long-term continuity and effectiveness.",
+        pt: "Desenvolvi produtos e APIs, projetando e implementando suas funcionalidades, além de contribuir ativamente para novos projetos. Realizando o mapeamento de requisitos funcionais, não funcionais e regras de negócio, garantindo uma base sólida para o desenvolvimento. Também atuei na criação de integrações eficientes entre APIs e aplicativos, utilizando recursos tanto embarcados quanto na nuvem. Além disso, desempenhei um papel na sustentação de projetos concluídos, assegurando sua continuidade e eficácia a longo prazo."
     }
     static COMPANY_WORK_JOB_SKILLS_CONTENT1 = {
         en: ".NET, C#, Xamarin Forms, API ASP.NET, SQL SERVER, Dapper(ORM), Jira, Trello, TFS, Visual Studio",
