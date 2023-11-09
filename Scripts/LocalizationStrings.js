@@ -87,6 +87,19 @@ class LocalizationStrings {
         en: "Programming Language: C#, Database: SQLite, Framework: Xamarin Forms",
         pt: "Linguagem de programação: C#, Banco de dados: SQLite, Framework: Xamarin Forms"
     };
+    static PROJECT_TITLE_CONTENT2 = {
+        en: "Learning TDD ",
+        pt: "Learning TDD "
+    };
+    static PROJECT_DESCRIPTION_CONTENT2 = {
+        en: "I developed a personal project in C# .NET Core, following the Test-Driven Development (TDD) approach with xUnit. The creation of the data capture API emphasized unit testing, application of domain concepts, adherence to SOLID principles, use of dependency inversion, mocks, and the Bogus library for generating random data.",
+
+        pt: "Desenvolvi um projeto pessoal em C# .NET Core, seguindo a abordagem de Desenvolvimento Orientado a Testes (TDD) com xUnit. A construção da API de captura de dados priorizou testes unitários, aplicação de conceitos de domínio, adesão aos princípios SOLID, uso de inversão de dependência, mocks e a biblioteca Bogus para dados aleatórios."
+    };
+    static PROJECT_STACKS_CONTENT2 = {
+        en: "Programming Language: C#; Frameworks: .NET Core; Tools: xUnit, Mock, Bogus.",
+        pt: "Linguagem de Programação: C#; Frameworks: .NET Core; Ferramentas: xUnit, Mock, Bogus."
+    };
 
     static EXPERIENCE_TITLE = {
         en: "Experiences",
@@ -219,6 +232,11 @@ function changeLanguage(selectedLanguage) {
     var projectDescriptionContentLink = document.getElementById("project-description-content");
     var projectStacksContentLink = document.getElementById("project-stacks-content");
 
+    var projectTitleContentLink2 = document.getElementById("project-title-content2");
+    var projectDescriptionContentLink2 = document.getElementById("project-description-content2");
+    var projectStacksContentLink2 = document.getElementById("project-stacks-content2");
+
+
     var experienceTitleLink = document.getElementById("experience-title-link");
 
     var experienceTitleLinks = document.querySelectorAll(".company-title");
@@ -285,6 +303,10 @@ function changeLanguage(selectedLanguage) {
     projectTitleContentLink.textContent = LocalizationStrings.PROJECT_TITLE_CONTENT1[selectedLanguage];
     projectDescriptionContentLink.textContent = LocalizationStrings.PROJECT_DESCRIPTION_CONTENT1[selectedLanguage];
     projectStacksContentLink.textContent = LocalizationStrings.PROJECT_STACKS_CONTENT1[selectedLanguage];
+
+    projectTitleContentLink2.textContent = LocalizationStrings.PROJECT_TITLE_CONTENT2[selectedLanguage];
+    projectDescriptionContentLink2.textContent = LocalizationStrings.PROJECT_DESCRIPTION_CONTENT2[selectedLanguage];
+    projectStacksContentLink2.textContent = LocalizationStrings.PROJECT_STACKS_CONTENT2[selectedLanguage];
 
     experienceTitleLink.textContent = LocalizationStrings.EXPERIENCE_TITLE[selectedLanguage];
 
