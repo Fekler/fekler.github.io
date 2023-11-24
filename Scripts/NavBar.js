@@ -1,4 +1,4 @@
-function myFunction() {
+function NavBarClick() {
     var x = document.getElementsByClassName("navbar")[0];
     var links = document.querySelectorAll(".navbar a:not(.icon)");
 
