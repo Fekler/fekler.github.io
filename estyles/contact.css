@@ -66,6 +66,7 @@
     color:darkcyan;
     background-color: gray;
 }
+
 @media screen and (max-width: 767px) {
     .divContactIcon a img {
         height: 60px;
