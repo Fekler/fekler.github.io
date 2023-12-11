@@ -54,7 +54,6 @@
     transition: opacity 0.3s;
     margin: 0 10px;
     margin-top: 10px;
-
 }
 .divSkills img:hover {
     opacity: 0.7;
@@ -92,4 +91,15 @@
 .skills-button:hover {
     color:darkcyan;
     background-color: rgb(15, 25, 40);
+}
+@media screen and (max-width: 767px) {
+
+    .divSkills img {
+        height: 60px;
+    }
+    .skills-button {
+        height: 30px;
+        width: 30px;
+
+    }
 }
