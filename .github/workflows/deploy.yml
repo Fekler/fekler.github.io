@@ -22,5 +22,6 @@ jobs:
         port: 22
         script: |
           cd /var/www/fekler.tec.br/html
-          git pull origin master
+          git pull origin main
           # Comandos adicionais para build/restart se necessário
+  
