@@ -22,6 +22,8 @@ jobs:
         port: 22
         script: |
           cd /var/www/fekler.tec.br/html
+          git config user.email "fekler.jobs@gmail.com"
+          git config user.name "fekler"
           git reset --hard
           git pull origin main --rebase
           # Comandos adicionais para build/restart se necessário
