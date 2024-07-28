@@ -19,12 +19,9 @@ jobs:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
         key: ${{ secrets.SSH_KEY }}
-        port: 22
+        port: ${{ secrets.SSH_PORT }}
         script: |
-          cd /var/www/fekler.tec.br/html
-          git config user.email "fekler.jobs@gmail.com"
-          git config user.name "fekler"
-          git reset --hard
-          git pull origin main --rebase
+          cd ${{ secrets.WEB_DIR }}
+          git pull origin main
           # Comandos adicionais para build/restart se necessário
   
