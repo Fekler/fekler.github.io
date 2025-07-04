@@ -1,231 +1,423 @@
 <!DOCTYPE html>
 <html>
-<html lang="pt">
+  <html lang="pt">
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="stylesheet" href="estyles/about.css" />
+      <link rel="stylesheet" href="estyles/contact.css" />
+      <link rel="stylesheet" href="estyles/content.css" />
+      <link rel="stylesheet" href="estyles/experience.css" />
+      <link rel="stylesheet" href="estyles/footer.css" />
+      <link rel="stylesheet" href="estyles/navbar.css" />
+      <link rel="stylesheet" href="estyles/skills.css" />
+      <link rel="stylesheet" href="estyles/contact.css" />
+      <link rel="stylesheet" href="estyles/projects.css" />
 
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="estyles/about.css">
-    <link rel="stylesheet" href="estyles/contact.css">
-    <link rel="stylesheet" href="estyles/content.css">
-    <link rel="stylesheet" href="estyles/experience.css">
-    <link rel="stylesheet" href="estyles/footer.css">
-    <link rel="stylesheet" href="estyles/navbar.css">
-    <link rel="stylesheet" href="estyles/skills.css">
-    <link rel="stylesheet" href="estyles/contact.css">
-    <link rel="stylesheet" href="estyles/projects.css">
+      <meta charset="UTF-8" />
+      <title>Felipe Queiroz</title>
+      <link
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href="Resources/favicon/apple-touch-icon.png"
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="Resources/favicon/favicon-32x32.png"
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="Resources/favicon/favicon-16x16.png"
+      />
+    </head>
 
-
-    <meta charset="UTF-8">
-    <title>Felipe Queiroz</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="Resources/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="Resources/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="Resources/favicon/favicon-16x16.png">
-</head>
-
-<body>
-    <header>
+    <body>
+      <header>
         <div class="navbar">
-            <a href="javascript:void(0);" class="icon" onclick="NavBarClick()">&#9776;</a>
-            <img href="#content" src="Resources/Images/fekler.jpeg" alt="Logo">
-            <a id="NavBarName" class="name" href="#content">Felipe Queiroz</a>
-            <div class="right-fields">
-                <select id="language-selector" onchange="changeLanguage(this.value)">
-                    <option value="pt">&#127463;&#127479; Português</option>
-                    <option value="en">&#127482;&#127480; English</option>
-                </select>
-                <a id="about-link" class="smooth" href="#content"></a>
-                <a id="portfolio-link" class="smooth" href="#portifolio"></a>
-                <a id="experience-link" class="smooth" href="#experience"></a>
-                <a id="contact-link" class="smooth" href="#contact"></a>
-            </div>
+          <a href="javascript:void(0);" class="icon" onclick="NavBarClick()"
+            >&#9776;</a
+          >
+          <img href="#content" src="Resources/Images/fekler.jpeg" alt="Logo" />
+          <a id="NavBarName" class="name" href="#content">Felipe Queiroz</a>
+          <div class="right-fields">
+            <select
+              id="language-selector"
+              onchange="changeLanguage(this.value)"
+            >
+              <option value="pt">&#127463;&#127479; Português</option>
+              <option value="en">&#127482;&#127480; English</option>
+            </select>
+            <a id="about-link" class="smooth" href="#content"></a>
+            <a id="portfolio-link" class="smooth" href="#portifolio"></a>
+            <a id="experience-link" class="smooth" href="#experience"></a>
+            <a id="contact-link" class="smooth" href="#contact"></a>
+          </div>
         </div>
-    </header>
+      </header>
 
-    <main id="content">
+      <main id="content">
         <div id="about" class="divAbout">
-            <div class="image-container">
-                <img id="img-perfil" src="Resources/Images/perfil_low.jpg" alt="Imagem de Perfil">
-            </div>
-            <div id="greetings-text-content" class="greetings-text-content">
-                <h1 id="greeting-link" class="h1-greeting"></h1>
-                <p id="perfil-link" class="perfil-link"></p>
-            </div>
+          <div class="image-container">
+            <img
+              id="img-perfil"
+              src="Resources/Images/perfil_low.jpg"
+              alt="Imagem de Perfil"
+            />
+          </div>
+          <div id="greetings-text-content" class="greetings-text-content">
+            <h1 id="greeting-link" class="h1-greeting"></h1>
+            <p id="perfil-link" class="perfil-link"></p>
+          </div>
         </div>
         <div class="about-content">
-            <h1 id="skill-title-link" class="skill-title-link"></h1>
-            <p id="skill-content-link" class="skill-content-link"></p>
+          <h1 id="skill-title-link" class="skill-title-link"></h1>
+          <p id="skill-content-link" class="skill-content-link"></p>
         </div>
         <div class="divSkills-title">
-            <h1 id="tec-title-link" class="skills-title"></h1>
+          <h1 id="tec-title-link" class="skills-title"></h1>
 
-            <span id="tec-content-link" class="skill-content"></span>
+          <span id="tec-content-link" class="skill-content"></span>
         </div>
         <div class="divSkills">
-            <button id="prev-button" class="skills-button"><</button>
-                    <span><img src="Resources/Images/csharp.png" alt="C#" title="C#"></span>
-                    <span><img src="Resources/Images/dotnet.png" alt=".NET Core" title=".NET Core"></span>
-                    <span><img src="Resources/Images/xamarin.png" alt="Xamarin Forms" title="Xamarin Forms"></span>
-                    <span><img src="Resources/Images/MAUI.png" alt=".NET MAUI" title=".NET MAUI"></span>
-                    <span><img src="Resources/Images/azure.png" alt="Azure Services" title="Azure Services"></span>
-                    <span><img src="Resources/Images/sql-server.png" alt="SQL Server" title="SQL Server"></span>
-                    <span><img src="Resources/Images/postgresql.png" alt="Postgres SQL" title="Postgres SQL"></span>
-                    <span><img src="Resources/Images/redis.png" alt="Redis" title="Redis"></span>
-                    <span><img src="Resources/Images/sqlite.png" alt="SQLite" title="SQLite"></span>
-                    <span><img src="Resources/Images/mongodb.png" alt="MongoDB" title="MongoDB"></span>
-                    <span><img src="Resources/Images/docker.png" alt="Docker" title="Docker"></span>
-                    <span><img src="Resources/Images/microsoft.png" alt="Windows plataform"
-                            title="Windows Plataform"></span>
-                    <span><img src="Resources/Images/github.png" alt="GitHub" title="Github"></span>
+          <button id="prev-button" class="skills-button"><</button>
+          <span
+            ><img src="Resources/Images/csharp.png" alt="C#" title="C#"
+          /></span>
+          <span
+            ><img
+              src="Resources/Images/dotnet.png"
+              alt=".NET Core"
+              title=".NET Core"
+          /></span>
+          <span
+            ><img
+              src="Resources/Images/xamarin.png"
+              alt="Xamarin Forms"
+              title="Xamarin Forms"
+          /></span>
+          <span
+            ><img
+              src="Resources/Images/MAUI.png"
+              alt=".NET MAUI"
+              title=".NET MAUI"
+          /></span>
+          <span
+            ><img
+              src="Resources/Images/azure.png"
+              alt="Azure Services"
+              title="Azure Services"
+          /></span>
+          <span
+            ><img
+              src="Resources/Images/sql-server.png"
+              alt="SQL Server"
+              title="SQL Server"
+          /></span>
+          <span
+            ><img
+              src="Resources/Images/postgresql.png"
+              alt="Postgres SQL"
+              title="Postgres SQL"
+          /></span>
+          <span
+            ><img src="Resources/Images/redis.png" alt="Redis" title="Redis"
+          /></span>
+          <span
+            ><img src="Resources/Images/sqlite.png" alt="SQLite" title="SQLite"
+          /></span>
+          <span
+            ><img
+              src="Resources/Images/mongodb.png"
+              alt="MongoDB"
+              title="MongoDB"
+          /></span>
+          <span
+            ><img src="Resources/Images/docker.png" alt="Docker" title="Docker"
+          /></span>
+          <span
+            ><img
+              src="Resources/Images/microsoft.png"
+              alt="Windows plataform"
+              title="Windows Plataform"
+          /></span>
+          <span
+            ><img src="Resources/Images/github.png" alt="GitHub" title="Github"
+          /></span>
 
-                    <button id="next-button" class="skills-button">></button>
+          <button id="next-button" class="skills-button">></button>
         </div>
         <div class="project-div-title" id="portifolio">
-            <h1 class="portifolio-title" id="portfolio-title-link"></h1>
+          <h1 class="portifolio-title" id="portfolio-title-link"></h1>
         </div>
         <div class="project">
-            <ul class="project-list">
-                <li class="project-item">
-                    <div class="project-image">
-                        <img src="Resources/Images/AppGallery.png" alt="AppGallery" title="AppGallery">
-                    </div>
-                    <div class="project-details">
-                        <span id="project-title" class="project-title"></span>
-                        <span id="project-title-content" class="project-title-content"></span>
-                        <br>
-                        <span id="project-description" class="project-description"> </span> <span
-                            id="project-description-content" class="project-description-content"></span>
-                        <br>
-                        <span id="project-stacks" class="project-stacks"> </span><span id="project-stacks-content"
-                            class="project-stacks-content"></span>
-                        <br>
-                        <span id="project-sourceCode" class="project-sourceCode"></span> <span
-                            id="project-sourceCode-content" class="project-sourceCode-content"><a
-                                href="https://github.com/Fekler/AppGallery">https://github.com/Fekler/AppGallery</a></span>
-                    </div>
-                </li>
-                <li class="project-item">
-                    <div class="project-image">
-                        <img src="" alt="" title="">
-                    </div>
-                    <div class="project-details">
-                        <span id="project-title" class="project-title"></span>
-                        <span id="project-title-content2" class="project-title-content"></span>
-                        <br>
-                        <span id="project-description" class="project-description"> </span> <span
-                            id="project-description-content2" class="project-description-content"></span>
-                        <br>
-                        <span id="project-stacks" class="project-stacks"> </span><span
-                            id="project-stacks-content2" class="project-stacks-content"></span>
-                        <br>
-                        <span id="project-sourceCode" class="project-sourceCode"></span> <span
-                            id="project-sourceCode-content" class="project-sourceCode-content"><a
-                                href="https://github.com/Fekler/LearningTDD">https://github.com/Fekler/LearningTDD/</a></span>
-                    </div>
-                </li>
-                <!-- 
+          <ul class="project-list">
+            <li class="project-item">
+              <div class="project-image">
+                <img
+                  src="Resources/Images/Orderly-removebg-preview.png"
+                  alt=""
+                  title=""
+                />
+              </div>
+              <div class="project-details">
+                <span id="project-title" class="project-title"></span>
+                <span
+                  id="project-title-content-orderly"
+                  class="project-title-content"
+                ></span>
+                <br />
+                <span id="project-description" class="project-description">
+                </span>
+                <span
+                  id="project-description-content-orderly"
+                  class="project-description-content"
+                ></span>
+                <br />
+                <span id="project-stacks" class="project-stacks"> </span
+                ><span
+                  id="project-stacks-content-orderly"
+                  class="project-stacks-content"
+                ></span>
+                <br />
+                <span id="project-sourceCode" class="project-sourceCode"></span>
+                <span
+                  id="project-sourceCode-content"
+                  class="project-sourceCode-content"
+                  ><a href="https://github.com/fekler/OrderlyApp"
+                    >https://github.com/fekler/OrderlyApp</a
+                  ></span>
+                <br />
+                <span id="project-link" class="project-link">Link: </span> 
+                <span
+                  id="project-link-content-orderly"
+                  class="project-link-content"
+                  ><a href="https://orderly.fekler.tec.br/"
+                    >https://orderly.fekler.tec.br</a
+                  ></span
+                >
+              </div>
+            </li>
+            <li class="project-item">
+              <div class="project-image">
+                <img
+                  src="Resources/Images/AppGallery.png"
+                  alt="AppGallery"
+                  title="AppGallery"
+                />
+              </div>
+              <div class="project-details">
+                <span id="project-title" class="project-title"></span>
+                <span
+                  id="project-title-content"
+                  class="project-title-content"
+                ></span>
+                <br />
+                <span id="project-description" class="project-description">
+                </span>
+                <span
+                  id="project-description-content"
+                  class="project-description-content"
+                ></span>
+                <br />
+                <span id="project-stacks" class="project-stacks"> </span
+                ><span
+                  id="project-stacks-content"
+                  class="project-stacks-content"
+                ></span>
+                <br />
+                <span id="project-sourceCode" class="project-sourceCode"></span>
+                <span
+                  id="project-sourceCode-content"
+                  class="project-sourceCode-content"
+                  ><a href="https://github.com/fekler/AppGallery"
+                    >https://github.com/fekler/AppGallery</a
+                  ></span
+                >
+              </div>
+            </li>
+            <li class="project-item">
+              <div class="project-image">
+                <img src="" alt="" title="" />
+              </div>
+              <div class="project-details">
+                <span id="project-title" class="project-title"></span>
+                <span
+                  id="project-title-content2"
+                  class="project-title-content"
+                ></span>
+                <br />
+                <span id="project-description" class="project-description">
+                </span>
+                <span
+                  id="project-description-content2"
+                  class="project-description-content"
+                ></span>
+                <br />
+                <span id="project-stacks" class="project-stacks"> </span
+                ><span
+                  id="project-stacks-content2"
+                  class="project-stacks-content"
+                ></span>
+                <br />
+                <span id="project-sourceCode" class="project-sourceCode"></span>
+                <span
+                  id="project-sourceCode-content"
+                  class="project-sourceCode-content"
+                  ><a href="https://github.com/Fekler/LearningTDD"
+                    >https://github.com/Fekler/LearningTDD/</a
+                  ></span
+                >
+              </div>
+            </li>
+            <!-- 
                 <li class="project-item">
                 </li>-->
-
-            </ul>
-
+          </ul>
         </div>
         <div class="experience-div-title" id="experience">
-            <h1 class="experience-title" id="experience-title-link"></h1>
+          <h1 class="experience-title" id="experience-title-link"></h1>
         </div>
         <div class="divExperience">
-            <ul class="experience-list">
-                <li class="experience-item">
-                    <div class="experience-details">
-                        <div class="experience-header">
-                            <span class="company-title"></span>
-                            <span id="company-title-content" class="company-title-content"></span>
-                        </div>
-                        <div class="experience-header">
-                            <span class="company-job-workperiod"></span>
-                            <span id="company-job-workperiod-content" class="company-job-workperiod-content"></span>
-                        </div>
-                        <div class="experience-header">
-                            <span class="company-job"></span>
-                            <span id="company-job-content" class="company-job-content"></span>
-                        </div>
-                        <div class="experience-header">
-                            <span class="company-job-description"></span>
-                            <span id="company-job-description-content" class="company-job-description-content"></span>
-                        </div>
-                        <div class="experience-header">
-                            <span class="company-stacks"></span>
-                            <span id="company-stacks-content" class="company-stacks-content"></span>
-                        </div>
-                    </div>
-                </li>
-                <li class="experience-item">
-                    <div class="experience-details">
-                        <div class="experience-header">
-                            <span class="company-title"></span>
-                            <span id="company-title-content2" class="company-title-content"></span>
-                        </div>
-                        <div class="experience-header">
-                            <span class="company-job-workperiod"></span>
-                            <span id="company-job-workperiod-content2" class="company-job-workperiod-content"></span>
-                        </div>
-                        <div class="experience-header">
-                            <span class="company-job"></span>
-                            <span id="company-job-content2" class="company-job-content"></span>
-                        </div>
-                        <div class="experience-header">
-                            <span class="company-job-description"></span>
-                            <span id="company-job-description-content2" class="company-job-description-content"></span>
-                        </div>
-                        <div class="experience-header">
-                            <span class="company-stacks"></span>
-                            <span id="company-stacks-content2" class="company-stacks-content"></span>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-
+          <ul class="experience-list">
+            <li class="experience-item">
+              <div class="experience-details">
+                <div class="experience-header">
+                  <span class="company-title"></span>
+                  <span
+                    id="company-title-content"
+                    class="company-title-content"
+                  ></span>
+                </div>
+                <div class="experience-header">
+                  <span class="company-job-workperiod"></span>
+                  <span
+                    id="company-job-workperiod-content"
+                    class="company-job-workperiod-content"
+                  ></span>
+                </div>
+                <div class="experience-header">
+                  <span class="company-job"></span>
+                  <span
+                    id="company-job-content"
+                    class="company-job-content"
+                  ></span>
+                </div>
+                <div class="experience-header">
+                  <span class="company-job-description"></span>
+                  <span
+                    id="company-job-description-content"
+                    class="company-job-description-content"
+                  ></span>
+                </div>
+                <div class="experience-header">
+                  <span class="company-stacks"></span>
+                  <span
+                    id="company-stacks-content"
+                    class="company-stacks-content"
+                  ></span>
+                </div>
+              </div>
+            </li>
+            <li class="experience-item">
+              <div class="experience-details">
+                <div class="experience-header">
+                  <span class="company-title"></span>
+                  <span
+                    id="company-title-content2"
+                    class="company-title-content"
+                  ></span>
+                </div>
+                <div class="experience-header">
+                  <span class="company-job-workperiod"></span>
+                  <span
+                    id="company-job-workperiod-content2"
+                    class="company-job-workperiod-content"
+                  ></span>
+                </div>
+                <div class="experience-header">
+                  <span class="company-job"></span>
+                  <span
+                    id="company-job-content2"
+                    class="company-job-content"
+                  ></span>
+                </div>
+                <div class="experience-header">
+                  <span class="company-job-description"></span>
+                  <span
+                    id="company-job-description-content2"
+                    class="company-job-description-content"
+                  ></span>
+                </div>
+                <div class="experience-header">
+                  <span class="company-stacks"></span>
+                  <span
+                    id="company-stacks-content2"
+                    class="company-stacks-content"
+                  ></span>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
         <div class="Contact" id="contact">
-            <div class="divTitle">
-                <h2 id="contact-title-link" class="contactTitle"></h2>
-            </div>
-            <div class="divContactContent">
-                <p id="contact-content-link"></p>
-            </div>
-            <div class="divContactIcon">
-                <button id="prev-contact-button" class="contact-button"><</button>
-                        <span>
-                            <a href="mailto:fekler.jobs@gmail.com">
-                                <img src="Resources/Images/gmailRound.png" alt="gmail" title="Email">
-                            </a>
-                        </span>
-                        <span>
-                            <a href="https://www.linkedin.com/in/fekler/">
-                                <img src="Resources/Images/linkedin.png" alt="LinkedIn" title="LinkedIn">
-                            </a>
-                        </span>
-                        <span>
-                            <a href="https://github.com/Fekler">
-                                <img src="Resources/Images/github.png" alt="GitHub" title="GitHub">
-                            </a>
-                        </span>
-                        <span>
-                            <a href="https://api.whatsapp.com/send?phone=5584991859172&text=Ol%C3%A1%2C%20Felipe!">
-                                <img src="Resources/Images/whatsapp.png" alt="Whatsapp" title="Whatsapp">
-                            </a>
-                        </span>
-                        <button id="next-contact-button" class="contact-button">></button>
-            </div>
+          <div class="divTitle">
+            <h2 id="contact-title-link" class="contactTitle"></h2>
+          </div>
+          <div class="divContactContent">
+            <p id="contact-content-link"></p>
+          </div>
+          <div class="divContactIcon">
+            <button id="prev-contact-button" class="contact-button"><</button>
+            <span>
+              <a href="mailto:fekler.jobs@gmail.com">
+                <img
+                  src="Resources/Images/gmailRound.png"
+                  alt="gmail"
+                  title="Email"
+                />
+              </a>
+            </span>
+            <span>
+              <a href="https://www.linkedin.com/in/fekler/">
+                <img
+                  src="Resources/Images/linkedin.png"
+                  alt="LinkedIn"
+                  title="LinkedIn"
+                />
+              </a>
+            </span>
+            <span>
+              <a href="https://github.com/Fekler">
+                <img
+                  src="Resources/Images/github.png"
+                  alt="GitHub"
+                  title="GitHub"
+                />
+              </a>
+            </span>
+            <span>
+              <a
+                href="https://api.whatsapp.com/send?phone=5584991859172&text=Ol%C3%A1%2C%20Felipe!"
+              >
+                <img
+                  src="Resources/Images/whatsapp.png"
+                  alt="Whatsapp"
+                  title="Whatsapp"
+                />
+              </a>
+            </span>
+            <button id="next-contact-button" class="contact-button">></button>
+          </div>
         </div>
+      </main>
 
-    </main>
-
-    <script>
-
-    </script>
-    <footer>
+      <script></script>
+      <footer>
         <div class="footer">
-            <span id="righter-link" class="righter"></span>
+          <span id="righter-link" class="righter"></span>
         </div>
         <script src="Scripts/NavBar.js"></script>
         <script src="Scripts/DivSkills.js"></script>
@@ -233,9 +425,7 @@
         <script src="Scripts/LocalizationStrings.js"></script>
         <script src="Scripts/SmothScroll.js"></script>
         <script src="Scripts/CalculatorHeight.js"></script>
-
-    </footer>
-</body>
-
-
+      </footer>
+    </body>
+  </html>
 </html>

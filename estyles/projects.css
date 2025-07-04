@@ -63,7 +63,7 @@
     text-align: left; /* Alinhe o texto à esquerda */
 
 }
-.project-description, .project-stacks, .project-sourceCode,.project-title {
+.project-description, .project-stacks, .project-sourceCode,.project-title, .project-link{
     font-weight: bold;
 }
 
